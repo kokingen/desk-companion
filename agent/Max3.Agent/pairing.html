@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Desk Companion 无线配对</title>
+<style>body{color:#dce8f6;background:#0a101b;font:18px system-ui;max-width:700px;margin:50px auto;padding:20px}button{background:#8bdcc5;border:0;border-radius:10px;padding:15px;font:inherit}textarea{width:100%;height:110px;background:#152335;color:inherit}img{width:280px}small{color:#9caebd}</style>
+<h1>Desk Companion</h1><p>手机与电脑连接同一局域网，在 Desk Companion 应用中扫码或粘贴配对链接，并核对校验码。</p><button id="pair">生成 5 分钟一次性配对码</button>
+<p id="status"></p><img id="qr" hidden alt="无线配对二维码"><h2 id="check"></h2><textarea id="link" readonly aria-label="配对链接"></textarea>
+<p><small>配对信息只在本机生成。服务保留证书校验与密钥认证。若网络隔离或防火墙阻挡，需要由你确认网络权限。</small></p>
+<h2>蓝牙设备</h2><p>先在两端系统设置中完成配对，再选择用于机器人数据的 Android 设备。</p><select id="peer" aria-label="已配对蓝牙设备"></select> <button id="choose" disabled>设为主通道</button><p id="bt-status"></p>
+<pre id="live"></pre><script>
+const fragment=new URLSearchParams(location.hash.slice(1));
+const supplied=fragment.get('admin');history.replaceState(null,'',location.pathname);
+if(supplied&&/^[a-f\d]{64}$/i.test(supplied))sessionStorage.setItem('companion-admin',supplied);
+const token=sessionStorage.getItem('companion-admin')||'';
+const status=document.querySelector('#status'),pair=document.querySelector('#pair');
+const peer=document.querySelector('#peer'),choose=document.querySelector('#choose');let pairedSignature='';
+pair.disabled=!token;
+if(!token)status.textContent='请运行 Open-Companion.ps1 打开当前用户的管理页。';
+async function api(path,options={}){const r=await fetch(path,{...options,headers:{...options.headers,Authorization:'Bearer '+token}});if(r.status===403){sessionStorage.removeItem('companion-admin');pair.disabled=true;status.textContent='管理授权无效，请重新运行 Open-Companion.ps1。';throw Error('管理授权无效');}return r;}
+choose.onclick=async()=>{try{const r=await api('/api/bluetooth/select',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({address:peer.value})});if(!r.ok)throw Error('无法选择该设备');document.querySelector('#bt-status').textContent='已选择，等待手机机器人界面连接。';}catch(e){document.querySelector('#bt-status').textContent=String(e)}};
+async function bluetoothStatus(){if(pair.disabled)return;const r=await api('/api/bluetooth/status');if(!r.ok)return;const b=await r.json(),list=b.paired||[],signature=JSON.stringify(list);if(signature!==pairedSignature){pairedSignature=signature;const selected=peer.value;peer.replaceChildren();for(const p of list){const option=document.createElement('option');option.value=p.address;option.textContent=p.name+' · '+p.address;peer.append(option);}if(list.some(p=>p.address===selected))peer.value=selected;}choose.disabled=!list.length;document.querySelector('#bt-status').textContent=b.connected?'蓝牙已认证 · Wi-Fi 备用':b.message;}
+setInterval(()=>bluetoothStatus().catch(()=>{}),2000);bluetoothStatus().catch(()=>{});
+pair.onclick=async()=>{try{const r=await api('/api/pair/start',{method:'POST'});const p=await r.json();if(!r.ok)throw Error(p.error||r.status);document.querySelector('#qr').src='data:image/svg+xml;base64,'+btoa(p.svg);document.querySelector('#qr').hidden=false;document.querySelector('#check').textContent='校验码 '+p.check;document.querySelector('#link').value=p.link;status.textContent='可连接地址：'+p.hosts.join(', ')}catch(e){if(!pair.disabled)status.textContent=String(e)}};
+setInterval(async()=>{if(pair.disabled)return;try{const r=await api('/api/state');if(!r.ok)return;const s=await r.json();document.querySelector('#live').textContent=JSON.stringify({sequence:s.metrics?.sequence,cpu:s.metrics?.cpu,memory:s.metrics?.memory,interfaces:s.metrics?.interfaces?.map(x=>({name:x.name,kind:x.kind,connected:x.connected,downBps:x.rawDownBps,upBps:x.rawUpBps})),ai:s.ai},null,2)}catch{}},1000);
+</script></html>

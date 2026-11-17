@@ -1,0 +1,2742 @@
+{
+  "createdAt": "2026-11-17T07:47:01.003Z",
+  "freebuff": [
+    {
+      "tool": "installed Freebuff CLI",
+      "version": "0.2.36",
+      "processCreation": "2026-11-17T03:31:14.7402692Z",
+      "command": "freebuff --cwd work/freebuff-031-review",
+      "ptySessionId": 32460,
+      "model": "DeepSeek V4.1 Flash Slow / low",
+      "submittedPrompt": "Read REVIEW_REQUEST.md and the provided source snapshots. Independently audit throughput, ACK/queues, security, release measurement. Write FREEBUFF_REVIEW_031.md and FREEBUFF_TEST_PLAN_031.md now. Do not change source files. Be concise and evidence based.",
+      "requestFileSha256": "B70A04F37D8EADDBA58D2346FE2FA8C786168B8D107A0DB12F073A33B0D5C375",
+      "reviewSha256": "7412589684986DBB97F4F5903BD103262835D1BFBF9CAED46D62B0F1A63FF2EA",
+      "testPlanSha256": "9025B8E944524D34A6B1622F5EA3310B30FB913F560F463C4ED67B69DAC042FC",
+      "phase": "0.3.0 baseline snapshot, independent source review for 0.3.1 upgrade",
+      "executionScope": "Freebuff read source and wrote review/test-plan files; its shell tool reported Git Bash unavailable, so no dynamic device test is attributed to this invocation",
+      "rawRecords": "Freebuff-written reports plus actual tool-call output excerpt and PowerShell transcript header"
+    },
+    {
+      "tool": "Installed Freebuff CLI",
+      "version": "0.2.36",
+      "command": "freebuff --cwd work/freebuff-031-final-review",
+      "ptySessionId": 63963,
+      "processCreation": "2026-11-17T12:29:50.660021+08:00",
+      "model": "DeepSeek V4.1 Flash Slow / low",
+      "requests": [
+        "REVIEW_REQUEST.md",
+        "RECHECK_REQUEST.md",
+        "FINAL_FENCE_REQUEST.md"
+      ],
+      "produced": [
+        "FREEBUFF_FINAL_REVIEW.md",
+        "FREEBUFF_MEASUREMENT_REVIEW.md",
+        "FREEBUFF_RECHECK.md",
+        "FREEBUFF_ACCEPTANCE_CHECKS.mjs"
+      ],
+      "notProduced": [
+        "FREEBUFF_FENCE_REVIEW.md"
+      ],
+      "scope": "Actual interactive CLI read supplied source snapshots and wrote these files. Shell execution failed (Git Bash unavailable); no dynamic hardware execution attributed to Freebuff. Parent executed its authored checker on real capture analysis; FAIL/NOT_TESTED preserved. TUI transcript incomplete; no full transcript claimed."
+    }
+  ],
+  "openCode": [
+    {
+      "tool": "Installed OpenCode CLI",
+      "sourceRecord": "opencode-031-run.jsonl",
+      "originalSha256": "71ECE3A4621707C0B04BFD820168F30B25150F146EC17D5D02049A2553A40542",
+      "sessionID": "ses_e18353fddffe5b5M5ZoUUXI4q1",
+      "firstRecordedAt": "2026-11-17T04:36:34.737Z",
+      "lastRecordedAt": "2026-11-17T04:50:43.811Z",
+      "command": "opencode run --dir <repo> --format json [--session <existing>] <scoped task>",
+      "toolCalls": [
+        {
+          "at": 1794890196382,
+          "tool": "glob",
+          "status": "completed",
+          "callID": "call_ac3582ff256e43428100eae7"
+        },
+        {
+          "at": 1794890196392,
+          "tool": "glob",
+          "status": "completed",
+          "callID": "call_c26d3202ec124afcbc339561"
+        },
+        {
+          "at": 1794890196406,
+          "tool": "glob",
+          "status": "completed",
+          "callID": "call_24a517a925c142959914a196"
+        },
+        {
+          "at": 1794890196452,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_ce744f81438a4f689d7d63d7"
+        },
+        {
+          "at": 1794890196694,
+          "tool": "glob",
+          "status": "completed",
+          "callID": "call_49b927e54dfd44f0b486e61a"
+        },
+        {
+          "at": 1794890197498,
+          "tool": "glob",
+          "status": "completed",
+          "callID": "call_2ae480819e384d5db91ab9e4"
+        },
+        {
+          "at": 1794890201593,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_a5309e9f14414fddbdef3b41"
+        },
+        {
+          "at": 1794890202036,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_e2d9ccd7f5554da4b2dfc827"
+        },
+        {
+          "at": 1794890206181,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_74597bcb2a5b43f08a5a78e9"
+        },
+        {
+          "at": 1794890207044,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_f960b63daa2e435989d40fc8"
+        },
+        {
+          "at": 1794890210762,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_6cfe40223358484f992d981c"
+        },
+        {
+          "at": 1794890211628,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_12d4903bf2ca4fc8ae145f9c"
+        },
+        {
+          "at": 1794890211635,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_5f5403716fe849139f6ce605"
+        },
+        {
+          "at": 1794890214959,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_d281bc5482c645fab949eb5a"
+        },
+        {
+          "at": 1794890215461,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_73257fd38ab643c5b63b83bc"
+        },
+        {
+          "at": 1794890215816,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_4419424aa049406595fb81af"
+        },
+        {
+          "at": 1794890220074,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_c08abc0854734224b8531008"
+        },
+        {
+          "at": 1794890221052,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_82099bdd9cae4881a11eef62"
+        },
+        {
+          "at": 1794890221259,
+          "tool": "grep",
+          "status": "completed",
+          "callID": "call_eb544d6c6916403ea905f4a4"
+        },
+        {
+          "at": 1794890225164,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_bcfdbc173a694be8aa72bc78"
+        },
+        {
+          "at": 1794890225419,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_1595cc00022a443a9b6bacd1"
+        },
+        {
+          "at": 1794890226113,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_e118b24f6fdc47ffb0da9484"
+        },
+        {
+          "at": 1794890226319,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_5f4e23875c074ff8a6bc36a2"
+        },
+        {
+          "at": 1794890245170,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_6cc26600d33e4727b1ff53be"
+        },
+        {
+          "at": 1794890246030,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_1a581cbf6a214c47814eae1a"
+        },
+        {
+          "at": 1794890246225,
+          "tool": "grep",
+          "status": "completed",
+          "callID": "call_58e1348074524129940de0ad"
+        },
+        {
+          "at": 1794890249932,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_7bde3a7ddd784ef8a593a3c9"
+        },
+        {
+          "at": 1794890250164,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_7c7ab3e515f645238b21ae8b"
+        },
+        {
+          "at": 1794890250467,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_233e506c64e44ee685d61360"
+        },
+        {
+          "at": 1794890304175,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_8c3bffb6809544ffb54f9a6d"
+        },
+        {
+          "at": 1794890304683,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_922af2ddd3054ceb9f042026"
+        },
+        {
+          "at": 1794890353108,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_13ed0615dda74b4eb62c4a92"
+        },
+        {
+          "at": 1794890354315,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_6667b18bb33d438384465995"
+        },
+        {
+          "at": 1794890359061,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_20fe88bd0bec404d83180c45"
+        },
+        {
+          "at": 1794890373554,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_4d31b7b09d1f4a9fac1c18b8"
+        },
+        {
+          "at": 1794890377823,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_7d54d9ade9b8431e9b356605"
+        },
+        {
+          "at": 1794890378589,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_14ae1f265b5d46ad8674915d"
+        },
+        {
+          "at": 1794890423190,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_2b718a3093d64c7f87c8687d"
+        },
+        {
+          "at": 1794890430076,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_1fc7ba8b1d724a7d9a79a520"
+        },
+        {
+          "at": 1794890439708,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_3bb64da1ff644f74adaad17f"
+        },
+        {
+          "at": 1794890446459,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_942eaeeab5044adb970557cf"
+        },
+        {
+          "at": 1794890452404,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_992bd39484604389a3f6c265"
+        },
+        {
+          "at": 1794890465305,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_e500b851f50f432bb8d5a4c0"
+        },
+        {
+          "at": 1794890477731,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_1939d63d665048fca90751fb"
+        },
+        {
+          "at": 1794890488236,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_d816e381766a411381ba864f"
+        },
+        {
+          "at": 1794890497787,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_d85195c3ede7440a83da35e0"
+        },
+        {
+          "at": 1794890507283,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_704a27b3cde1405c812ce880"
+        },
+        {
+          "at": 1794890515881,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_7964373132c04079952f93b6"
+        },
+        {
+          "at": 1794890529197,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_ad0a3cd813174eeb863a1537"
+        },
+        {
+          "at": 1794890536470,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_978bc61ee0914085a6b2bf64"
+        },
+        {
+          "at": 1794890549779,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_4f17ea3bd77e499786ba35ad"
+        },
+        {
+          "at": 1794890555229,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_515b2064368e41f1940dab5a"
+        },
+        {
+          "at": 1794890562631,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_1adac0c068304e15a0254e1b"
+        },
+        {
+          "at": 1794890563355,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_48d0e084475744c8950b1e81"
+        },
+        {
+          "at": 1794890621376,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_25647607f44140978b01bbcd"
+        },
+        {
+          "at": 1794890629035,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_38650756728f4310a77f1e37"
+        },
+        {
+          "at": 1794890636449,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_28480426c3424384a48235d0"
+        },
+        {
+          "at": 1794890637033,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_2397a5575ca44a5c8a224d64"
+        },
+        {
+          "at": 1794890676075,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_3e504b64ad604356ab6e93af"
+        },
+        {
+          "at": 1794890676141,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_5076b1fb7dec46fb965ced35"
+        },
+        {
+          "at": 1794890715555,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_eb951b1ba1fe41ecb2c15965"
+        },
+        {
+          "at": 1794890726644,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_79d85034f8034ca68e1020fe"
+        },
+        {
+          "at": 1794890727180,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_7c7a581d62d048e9963d0c10"
+        },
+        {
+          "at": 1794890738112,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_4c4112eac833450db944b5c1"
+        },
+        {
+          "at": 1794890761109,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_64b241becf7242f19002d78a"
+        },
+        {
+          "at": 1794890762463,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_75ad57475e864d4cb0d4c9f6"
+        },
+        {
+          "at": 1794890768274,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_fafd97b003f3449c80d0979a"
+        },
+        {
+          "at": 1794890769163,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_62e893b3671c469083ccafda"
+        },
+        {
+          "at": 1794890798339,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_afc0518dd5a843a18da778f0"
+        },
+        {
+          "at": 1794890835743,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_de1ebafac3f54ed8b7fd027d"
+        },
+        {
+          "at": 1794890876039,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_355eee41d59342478f9104b2"
+        },
+        {
+          "at": 1794890888308,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_3e1e7077a5d24188920b770b"
+        },
+        {
+          "at": 1794890896956,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_fc18535f7ab346b5a9f65a39"
+        },
+        {
+          "at": 1794890904179,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_b6ae3d641a9b436981d3a247"
+        },
+        {
+          "at": 1794890911700,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_d181bb971383459fb6c3fa5b"
+        },
+        {
+          "at": 1794890937862,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_e75ffbd1620b42e9af6ed132"
+        },
+        {
+          "at": 1794890944799,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_61439bcca4874705af5e2a9d"
+        },
+        {
+          "at": 1794890969942,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_02bcce15f0ed4588ac149d68"
+        },
+        {
+          "at": 1794890982359,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_a586e237fa8a412aaf903f9e"
+        },
+        {
+          "at": 1794890991513,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_8dc0095c16634218a41fe6ce"
+        },
+        {
+          "at": 1794890992797,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_bca15d396833476d98f1fd8c"
+        },
+        {
+          "at": 1794891033543,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_53fdf815d3e14858904cdf34"
+        }
+      ],
+      "finalResponseExcerpt": "Implemented authenticated event-ID history resume and wrote `OPENCODE_031_HISTORY_REVIEW.md`.\n\n- Windows/Android handshake now binds `history-id-v1` plus the exact cursor; unknown/pruned IDs map to 0.\n- Android checkpoints only from committed `eventHistory` batches, scoped by authenticated PC fingerprint.\n- Tests: earlier .NET run passed 83 checks; Android `compileDebugKotlin` succeeded. The final .NET rerun after a context-label-only adjustment compiled but execution was blocked by Windows application control, so that last adjustment was not executed.\n- No deployment, process/device changes, schema/version, 25 ms timer, or crypto framing changes.",
+      "recordScope": "Filtered from actual local CLI JSON events; not a complete raw transcript. Parent retained original privately."
+    },
+    {
+      "tool": "Installed OpenCode CLI",
+      "sourceRecord": "opencode-031-performance-review.jsonl",
+      "originalSha256": "0AD26EA3BF550F6FBABA44EC071BA3E40162B35B4AE10E84FC156079E6E913FF",
+      "sessionID": "ses_e1818be72ffemMnCxB8gix6MHs",
+      "firstRecordedAt": "2026-11-17T05:07:41.299Z",
+      "lastRecordedAt": "2026-11-17T05:13:53.721Z",
+      "command": "opencode run --dir <repo> --format json [--session <existing>] <scoped task>",
+      "toolCalls": [
+        {
+          "at": 1794892061946,
+          "tool": "grep",
+          "status": "completed",
+          "callID": "call_48d2086adbe14088b5386efe"
+        },
+        {
+          "at": 1794892062112,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_cca1891ae1ed4cb8a33c9159"
+        },
+        {
+          "at": 1794892062941,
+          "tool": "grep",
+          "status": "error",
+          "callID": "call_793c0ed95cb84bf297326bf0"
+        },
+        {
+          "at": 1794892066522,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_6485e365c3404324812b150f"
+        },
+        {
+          "at": 1794892067032,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_384c65b8653b4fc584f8cc66"
+        },
+        {
+          "at": 1794892072329,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_4ad4fbfe8d0f47f2af19811a"
+        },
+        {
+          "at": 1794892072693,
+          "tool": "grep",
+          "status": "completed",
+          "callID": "call_21074f0642834218bb36a7cf"
+        },
+        {
+          "at": 1794892078418,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_19e3c327172f4f7690d4f9cc"
+        },
+        {
+          "at": 1794892078733,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_88e19d958f644a2cadf8b3c8"
+        },
+        {
+          "at": 1794892137485,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_2033de161cc44ab29dccbf66"
+        },
+        {
+          "at": 1794892137909,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_a8f71fb6d181449b89fd1c34"
+        },
+        {
+          "at": 1794892144216,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_3af153a1055340e083ffaa9d"
+        },
+        {
+          "at": 1794892144333,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_01cb9bffd1f34f22a6fc9ccc"
+        },
+        {
+          "at": 1794892149860,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_5cc94506fb1f47e7a36a9f28"
+        },
+        {
+          "at": 1794892150224,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_40be482f061f491b898873e4"
+        },
+        {
+          "at": 1794892161232,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_826d8319c27648da82331a19"
+        },
+        {
+          "at": 1794892162928,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_40118d33eb974788a3bd5bb8"
+        },
+        {
+          "at": 1794892167517,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_d09f33a802e848cb8073da6f"
+        },
+        {
+          "at": 1794892168898,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_669c749e42074e169eb4fa9b"
+        },
+        {
+          "at": 1794892174956,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_bc8ac2a35bb8495cb7d74001"
+        },
+        {
+          "at": 1794892175146,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_1a4bcf4a92204024b89b3388"
+        },
+        {
+          "at": 1794892188579,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_c0668522578248b8b2477abf"
+        },
+        {
+          "at": 1794892194369,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_ae9e4107fa8142028e14dda9"
+        },
+        {
+          "at": 1794892195212,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_11758025e0a2465a85b49101"
+        },
+        {
+          "at": 1794892201083,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_21d37155a5324ff2a10b7c81"
+        },
+        {
+          "at": 1794892201265,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_5920a6e0d5d54fbbbf6da171"
+        },
+        {
+          "at": 1794892219542,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_945bf7447b0247fabf8995f4"
+        },
+        {
+          "at": 1794892220249,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_07769b414ee441c181c2ca7e"
+        },
+        {
+          "at": 1794892229827,
+          "tool": "websearch",
+          "status": "completed",
+          "callID": "call_b8e7ddd067854e00bdd71210"
+        },
+        {
+          "at": 1794892245042,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_a649de506e99415a8f4fe58a"
+        },
+        {
+          "at": 1794892247396,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_0ad42fa8268b42f9947012eb"
+        },
+        {
+          "at": 1794892251544,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_7193b142dadd4a41a6db6026"
+        },
+        {
+          "at": 1794892253096,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_bfcbc5b35d8b4e74a9aa7b98"
+        },
+        {
+          "at": 1794892258447,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_53c52c23fd4843498ba4d35a"
+        },
+        {
+          "at": 1794892287323,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_294844a7e3b443f99e7984f9"
+        },
+        {
+          "at": 1794892288220,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_88fce17bf2dc425498f2d010"
+        },
+        {
+          "at": 1794892294210,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_52ce5d8ed23e4f2fafdea398"
+        },
+        {
+          "at": 1794892333232,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_867a393f1a4e488a9d918ad4"
+        },
+        {
+          "at": 1794892334439,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_b57b4fca0de544f489121b7d"
+        },
+        {
+          "at": 1794892338221,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_c1cf7e8e264c4462b8aa0137"
+        },
+        {
+          "at": 1794892372680,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_7c6d10605a2d445d9ec34dc2"
+        },
+        {
+          "at": 1794892423058,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_997fec9429414678af51cc2e"
+        },
+        {
+          "at": 1794892427658,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_57f5297fc16848a98ff66f82"
+        }
+      ],
+      "finalResponseExcerpt": "I'll inspect the performance-related code changes and write the review file.\nCreated `OPENCODE_031_PERFORMANCE_REVIEW.md`.\n\nKey findings:\n- **Collector**: start-based `lastRead` correctly fixes the >20 ms suppression case (`Collector.cs:76,101`); rates still use per-adapter read timestamps (`Collector.cs:87-92,186-194`). Caveat: sustained >100 ms samples now re-sample back-to-back with no idle backoff; not a data bug.\n- **displayed**: non-recording path still updates `dom` and histograms (`CompanionPerformance.kt:64-66`), skips only UI-thread visual fences (`:69-70`). `visualReady` stays frozen outside recording, but no consumer depends on it (`Measure-CompanionStability.ps1:78-81`).\n- **CSS**: containment and `translateZ(0)` are present in both source and shipped Android asset (`style.css:3`), consistent via `build.mjs:16`. No static layout regression found; paint-clipping was not visually tested.\n- **Test scope**: no build/tests/device runs performed. Existing tests cover model/trend and `NetworkRate`/`Kind` only; no coverage for the collector gate, `displayed`, or CSS.",
+      "recordScope": "Filtered from actual local CLI JSON events; not a complete raw transcript. Parent retained original privately."
+    },
+    {
+      "tool": "Installed OpenCode CLI",
+      "sourceRecord": "opencode-031-persistence-run.jsonl",
+      "originalSha256": "7BE35D3DBC5A53C69B51DD1C338CB9A3B0C6E25026AA183249BAFD51195362AD",
+      "sessionID": "ses_e1813f736ffed14GrlzWujjO9T",
+      "firstRecordedAt": "2026-11-17T05:12:53.308Z",
+      "lastRecordedAt": "2026-11-17T05:28:56.800Z",
+      "command": "opencode run --dir <repo> --format json [--session <existing>] <scoped task>",
+      "toolCalls": [
+        {
+          "at": 1794892374095,
+          "tool": "glob",
+          "status": "completed",
+          "callID": "call_26539466b82b4536b6b33958"
+        },
+        {
+          "at": 1794892374103,
+          "tool": "glob",
+          "status": "completed",
+          "callID": "call_dbdaab549d87480f87b5bdc2"
+        },
+        {
+          "at": 1794892374373,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_fb3566b1ff12435e80bce58e"
+        },
+        {
+          "at": 1794892377223,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_4c602f8cbcb54231963a7402"
+        },
+        {
+          "at": 1794892377506,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_2047372298c44a86ad02dafb"
+        },
+        {
+          "at": 1794892377929,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_dfbfd55144b84e108d087b00"
+        },
+        {
+          "at": 1794892383434,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_2e0cdbe5745f412388baca2d"
+        },
+        {
+          "at": 1794892384379,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_2a96668014e94d3c97c679cf"
+        },
+        {
+          "at": 1794892384546,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_dc827efbdfdf4d47af3cd554"
+        },
+        {
+          "at": 1794892388706,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_33b79d60bde9447e87a62681"
+        },
+        {
+          "at": 1794892389282,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_a4ca19a3c39d4555bc786e78"
+        },
+        {
+          "at": 1794892392339,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_6a0e0051a9f7497f9b29f165"
+        },
+        {
+          "at": 1794892392791,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_f495665de0e84365a2cbed94"
+        },
+        {
+          "at": 1794892392984,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_07a82895d5e04ba4a7790080"
+        },
+        {
+          "at": 1794892396643,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_3b0ec1e3e0564b8a9b4a0521"
+        },
+        {
+          "at": 1794892397473,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_6bd0736fdda94fdbb59b34ce"
+        },
+        {
+          "at": 1794892444580,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_1562621ab7a8436394779c1c"
+        },
+        {
+          "at": 1794892450912,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_a2dab20bc06546c88f0c3d5c"
+        },
+        {
+          "at": 1794892457765,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_961041d19ccb4efe8d68aec6"
+        },
+        {
+          "at": 1794892463357,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_60491bd680ea487ab7fe261e"
+        },
+        {
+          "at": 1794892471489,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_e5f931977d26404ea11efceb"
+        },
+        {
+          "at": 1794892475077,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_c8a9192ef3cc4a8080d53a0b"
+        },
+        {
+          "at": 1794892480718,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_b4ab7a7aa30f431ca6f4a9cb"
+        },
+        {
+          "at": 1794892485519,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_c41976a584344d758d96ea0b"
+        },
+        {
+          "at": 1794892490641,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_6c71327e5a8a4fefbad2fff8"
+        },
+        {
+          "at": 1794892494834,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_f2bf0f9667614a178c1e8e1a"
+        },
+        {
+          "at": 1794892499445,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_76ea0bb6f4f8491ba6384719"
+        },
+        {
+          "at": 1794892506305,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_4588432bd3e444e08493d58c"
+        },
+        {
+          "at": 1794892509788,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_2b700ec6eef34fa1a95b1e7e"
+        },
+        {
+          "at": 1794892514017,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_966f6c89c25a4dab8fd6d15d"
+        },
+        {
+          "at": 1794892523506,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_6acd7196832242a68ed1d866"
+        },
+        {
+          "at": 1794892527186,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_c0f0892ec3f4433798433b4e"
+        },
+        {
+          "at": 1794892527563,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_47f457e21c5b40f9a54d592b"
+        },
+        {
+          "at": 1794892541786,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_7174ee89a45c4440aaf64743"
+        },
+        {
+          "at": 1794892542634,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_8334cade4c0341e3ab187ff9"
+        },
+        {
+          "at": 1794892546749,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_046ccbc08ffc4ac5957dcaf7"
+        },
+        {
+          "at": 1794892547276,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_8aaa9dc0a98c4b7da05f377f"
+        },
+        {
+          "at": 1794892551942,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_f92b585f93dd4aa0927c0e94"
+        },
+        {
+          "at": 1794892554662,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_d556db712dee4dea83270c00"
+        },
+        {
+          "at": 1794892559820,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_3e4dc7d7dca747e6b58d90f9"
+        },
+        {
+          "at": 1794892560256,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_fcdba7ceb80f44a599d5ba05"
+        },
+        {
+          "at": 1794892566689,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_700b8bf2340b46aebca99296"
+        },
+        {
+          "at": 1794892566976,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_b9af84a242bf482294590e0a"
+        },
+        {
+          "at": 1794892570498,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_b9a6951ea9e84db2ac2997f1"
+        },
+        {
+          "at": 1794893176321,
+          "tool": "bash",
+          "status": "error",
+          "callID": "call_f27612b7b8194bc7855092bf"
+        },
+        {
+          "at": 1794893199801,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_c77ac6bc94f2445e9dbc7b6a"
+        },
+        {
+          "at": 1794893205954,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_611e955d5d07464a86124434"
+        },
+        {
+          "at": 1794893206002,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_2f807e407feb44948c737a5c"
+        },
+        {
+          "at": 1794893210666,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_4a7a667af4c341dcba4e23ca"
+        },
+        {
+          "at": 1794893253226,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_702f15b94e2f4663bbeaa866"
+        },
+        {
+          "at": 1794893259842,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_dfba0861a1bf4d4c950a62a9"
+        },
+        {
+          "at": 1794893273362,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_ae5c9fa3fd5e42afa7c69093"
+        },
+        {
+          "at": 1794893280620,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_5c7b995ef6bd45959d1cdc42"
+        },
+        {
+          "at": 1794893306371,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_cdc74c9587544bdb8c35ce52"
+        },
+        {
+          "at": 1794893317012,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_a655b02343cb46e5b66e4b97"
+        },
+        {
+          "at": 1794893318089,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_a7e6a30df4a742c9be93a367"
+        }
+      ],
+      "finalResponseExcerpt": "Implemented the storage-failure fence:\n\n- `BluetoothLink.kt`: per-connection monotonic local `historyGeneration`, stamped after auth; `rejectHistoryGeneration(epoch)` closes only the matching active socket.\n- `CompanionActivity.kt`: single-writer rejected-through fence skips invalidated queued work, records failure, closes only the failed Bluetooth epoch; Wi-Fi strips the local field.\n- `CompanionPerformance.kt`: DUMP status now exposes `persistenceFailures`.\n- Added `HistoryGenerationFence.kt` plus 7 passing JVM checks.\n\nCompiled `:app:compileDebugKotlin` and `:app:compileDebugUnitTestKotlin` successfully; details in `OPENCODE_031_PERSISTENCE_REVIEW.md`. No device/instrumentation tests were run.",
+      "recordScope": "Filtered from actual local CLI JSON events; not a complete raw transcript. Parent retained original privately."
+    },
+    {
+      "tool": "Installed OpenCode CLI",
+      "sourceRecord": "opencode-031-stability-run.jsonl",
+      "originalSha256": "7CAD599DF6D2D6E90E807267E69F2F33EAD9100C8DF741C1369DFB9DDA29D65A",
+      "sessionID": "ses_e17ee5600ffeeVP7J20bXlA564",
+      "firstRecordedAt": "2026-11-17T05:54:05.317Z",
+      "lastRecordedAt": "2026-11-17T06:02:01.552Z",
+      "command": "opencode run --dir <repo> --format json [--session <existing>] <scoped task>",
+      "toolCalls": [
+        {
+          "at": 1794894846681,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_2739c682384e4e0a88c2fc12"
+        },
+        {
+          "at": 1794894847401,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_06d3e0cce94d4444ae3a319b"
+        },
+        {
+          "at": 1794894850570,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_ca6dcf729c15486192afd8a7"
+        },
+        {
+          "at": 1794894856133,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_44bd09b7a52e42f4bfd855f5"
+        },
+        {
+          "at": 1794894856154,
+          "tool": "grep",
+          "status": "completed",
+          "callID": "call_ccd47224a9154377b6ea65ec"
+        },
+        {
+          "at": 1794894859995,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_dd6ec43028f54060abe38a9c"
+        },
+        {
+          "at": 1794894860562,
+          "tool": "grep",
+          "status": "completed",
+          "callID": "call_60b4675de753470c83dd0e93"
+        },
+        {
+          "at": 1794894864495,
+          "tool": "grep",
+          "status": "completed",
+          "callID": "call_ebf0b2cd33044bde95582042"
+        },
+        {
+          "at": 1794894865475,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_90b58881960f44a9a1854fad"
+        },
+        {
+          "at": 1794895013668,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_08f164d868bd44c98f86b471"
+        },
+        {
+          "at": 1794895024646,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_5721f3cf8e984c84aa684160"
+        },
+        {
+          "at": 1794895027885,
+          "tool": "grep",
+          "status": "completed",
+          "callID": "call_d450600b83af446ab5f40b99"
+        },
+        {
+          "at": 1794895067244,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_c3b73c8dc71c4e57aad0bac1"
+        },
+        {
+          "at": 1794895072598,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_cf37f8b5614144f8bbad9ca2"
+        },
+        {
+          "at": 1794895072812,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_b7576b03a0f84882a05b8b08"
+        },
+        {
+          "at": 1794895106049,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_453d2c24cd5244438443c773"
+        },
+        {
+          "at": 1794895111778,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_d9fd98e908c542b78c6347ba"
+        },
+        {
+          "at": 1794895118799,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_9aabb0cc54d842a7b42d319e"
+        },
+        {
+          "at": 1794895124732,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_dcb6e919573b4fb88c6492ef"
+        },
+        {
+          "at": 1794895128981,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_9b83e974e2d348b5b80a9435"
+        },
+        {
+          "at": 1794895139625,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_ddc4e498afe14e72b994d1fa"
+        },
+        {
+          "at": 1794895147621,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_55cb9dc107aa4bc78608f7e0"
+        },
+        {
+          "at": 1794895154073,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_68d37ec3303e46509b3af1a6"
+        },
+        {
+          "at": 1794895160847,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_19896554ddfd47a7b421c955"
+        },
+        {
+          "at": 1794895173330,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_b2bfcf9cf2b343b384ecb20b"
+        },
+        {
+          "at": 1794895180954,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_c043760ba56c4dcf8a704a84"
+        },
+        {
+          "at": 1794895203645,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_f178a0a630684bc4a7eaf588"
+        },
+        {
+          "at": 1794895207533,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_de99f00e1bab449eaa0b92e4"
+        },
+        {
+          "at": 1794895212333,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_162be4f5ed1c4bbc8ac1e8e0"
+        },
+        {
+          "at": 1794895243673,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_559a104066ca43f4bb155e38"
+        },
+        {
+          "at": 1794895250756,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_6f2ce9b65f634356a9a84435"
+        },
+        {
+          "at": 1794895269577,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_fd3ca539122348d18718a6b0"
+        },
+        {
+          "at": 1794895276379,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_9c6776bd53894e169c3c0ef4"
+        },
+        {
+          "at": 1794895277817,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_ba663bb20bc142d88b223270"
+        },
+        {
+          "at": 1794895304643,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_3d9c936d619c45f5aaab0a5f"
+        },
+        {
+          "at": 1794895312297,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_40404493922f46b2bef86025"
+        }
+      ],
+      "finalResponseExcerpt": "Updated `tools/Measure-CompanionStability.ps1` and wrote `OPENCODE_031_STABILITY_REVIEW.md`.\n\n- Script now uses lifetime `totalSentFrames`/`totalSentBytes` for send rates, detects `connections` changes without double-counting resets, separates session/PID restarts, invalidates on `persistenceFailures` changes, records final phone/CPU, requires >=24h phone-counter span, uses monotonic gap/rate timing, and keeps ADB failures distinct from Bluetooth outages.\n- Real preflight (`Hours 0.002`, `IntervalSeconds 10`, `KeepSystemAwake`) completed with 1 checkpoint, 0 errors: `observationCompleted=true`, `validContinuousRun=false` (short duration and a real Bluetooth-absent checkpoint). No 24h acceptance is claimed.\n- Interval send-rate/connection-change branches were not live-exercised because the preflight produced only one checkpoint; this is recorded as a residual limitation.",
+      "recordScope": "Filtered from actual local CLI JSON events; not a complete raw transcript. Parent retained original privately."
+    },
+    {
+      "tool": "Installed OpenCode CLI",
+      "sourceRecord": "opencode-031-docs-run.jsonl",
+      "originalSha256": "ED9CC5955ACABD64BF9EF363FEF6526F117BB03597C19284AF9F2FA673D22F6E",
+      "sessionID": "ses_e17ee4e69ffetmfpAVgqCd23yL",
+      "firstRecordedAt": "2026-11-17T05:54:05.383Z",
+      "lastRecordedAt": "2026-11-17T05:54:52.040Z",
+      "command": "opencode run --dir <repo> --format json [--session <existing>] <scoped task>",
+      "toolCalls": [
+        {
+          "at": 1794894848706,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_056abd706c3d45e09476d4bc"
+        },
+        {
+          "at": 1794894848769,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_36de1d7a3f3f47adba041234"
+        },
+        {
+          "at": 1794894848957,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_2811c3d92a294a129867241b"
+        },
+        {
+          "at": 1794894852865,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_88813bc30c9446858471b1ac"
+        },
+        {
+          "at": 1794894863562,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_bf6c0337aa694fc4a6a96530"
+        },
+        {
+          "at": 1794894866611,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_c04babbc259b49b2bcd90bd8"
+        },
+        {
+          "at": 1794894867197,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_588c58bd06464d37bb71125c"
+        },
+        {
+          "at": 1794894874481,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_3b61390afa7a411086b56ec1"
+        },
+        {
+          "at": 1794894874486,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_31b755929b9e4637b6f333f8"
+        },
+        {
+          "at": 1794894879045,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_f60eec6833254df0855c2f1b"
+        },
+        {
+          "at": 1794894879133,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_6d3afac55b8c4835bca662c8"
+        },
+        {
+          "at": 1794894879222,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_f0b550ab0c7346eb89133a53"
+        },
+        {
+          "at": 1794894879751,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_72ae2112a766407e99c7db94"
+        },
+        {
+          "at": 1794894880262,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_603bfec8768d4622a3033553"
+        },
+        {
+          "at": 1794894883955,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_aefdabca3c86407db0c1c436"
+        },
+        {
+          "at": 1794894884377,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_c4347e1bfed3421eb20481ea"
+        },
+        {
+          "at": 1794894884963,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_b03cab32ec6a4ef7a1c8ce71"
+        },
+        {
+          "at": 1794894889889,
+          "tool": "read",
+          "status": "error",
+          "callID": "call_d38a424aae50461a85f17503"
+        },
+        {
+          "at": 1794894889909,
+          "tool": "read",
+          "status": "error",
+          "callID": "call_e0adb4ea3afe44d2bf66419f"
+        },
+        {
+          "at": 1794894890496,
+          "tool": "read",
+          "status": "error",
+          "callID": "call_5a5382b5fe5b4acab180dd81"
+        },
+        {
+          "at": 1794894890688,
+          "tool": "read",
+          "status": "error",
+          "callID": "call_c2067b85bb154f5c9c9be705"
+        },
+        {
+          "at": 1794894891311,
+          "tool": "read",
+          "status": "error",
+          "callID": "call_8c66e86e18974cdf952642d6"
+        },
+        {
+          "at": 1794894891831,
+          "tool": "read",
+          "status": "error",
+          "callID": "call_2d0b4504b4674773bf36608e"
+        },
+        {
+          "at": 1794894891831,
+          "tool": "read",
+          "status": "error",
+          "callID": "call_909d7b3dd6954c3884529314"
+        }
+      ],
+      "finalResponseExcerpt": "",
+      "recordScope": "Filtered from actual local CLI JSON events; not a complete raw transcript. Parent retained original privately."
+    },
+    {
+      "tool": "Installed OpenCode CLI",
+      "sourceRecord": "opencode-031-packaging-run.jsonl",
+      "originalSha256": "8BC03CA3B60781B683532A0003D8DAB40FB362A9A33259003CCF184BC8ACC816",
+      "sessionID": "ses_e17ee5611ffeTz79lqtn9r0VX6",
+      "firstRecordedAt": "2026-11-17T05:54:05.174Z",
+      "lastRecordedAt": "2026-11-17T05:54:23.038Z",
+      "command": "opencode run --dir <repo> --format json [--session <existing>] <scoped task>",
+      "toolCalls": [
+        {
+          "at": 1794894846535,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_b2fe6f4c94844caa891feaeb"
+        },
+        {
+          "at": 1794894847168,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_b8d383eb481148e79849d365"
+        },
+        {
+          "at": 1794894850980,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_959a3326f88049e9915827ed"
+        },
+        {
+          "at": 1794894851630,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_f2808be867464c518420a3aa"
+        },
+        {
+          "at": 1794894855908,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_350389eddeca482eac5cb458"
+        },
+        {
+          "at": 1794894856013,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_8a1c7f1b7c7b499f83ec23c6"
+        },
+        {
+          "at": 1794894861471,
+          "tool": "read",
+          "status": "error",
+          "callID": "call_1abea970cbf24dd0972add2e"
+        },
+        {
+          "at": 1794894861471,
+          "tool": "read",
+          "status": "error",
+          "callID": "call_7f238722cb1c402983ccf026"
+        },
+        {
+          "at": 1794894861628,
+          "tool": "read",
+          "status": "error",
+          "callID": "call_fabfa527cbf24ce2b90fb507"
+        },
+        {
+          "at": 1794894862764,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_5562ac610c8a4565a516bbcd"
+        }
+      ],
+      "finalResponseExcerpt": "",
+      "recordScope": "Filtered from actual local CLI JSON events; not a complete raw transcript. Parent retained original privately."
+    },
+    {
+      "tool": "Installed OpenCode CLI",
+      "sourceRecord": "opencode-031-docs-finalize.jsonl",
+      "originalSha256": "37B282DDC39903A79BFD179760C7F4955A0C0D3510AE8D6CA31CA6A94D22E31B",
+      "sessionID": "ses_e17ee4e69ffetmfpAVgqCd23yL",
+      "firstRecordedAt": "2026-11-17T07:32:03.562Z",
+      "lastRecordedAt": "2026-11-17T07:36:11.972Z",
+      "command": "opencode run --dir <repo> --format json [--session <existing>] <scoped task>",
+      "toolCalls": [
+        {
+          "at": 1794900725008,
+          "tool": "glob",
+          "status": "completed",
+          "callID": "call_3d36f02eb9d04a1b894bc3cf"
+        },
+        {
+          "at": 1794900725198,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_18d0fb624071467093f014bb"
+        },
+        {
+          "at": 1794900727899,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_28c8d9af07a34a57908b60b7"
+        },
+        {
+          "at": 1794900728360,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_df8962d5404a4fb8b874e3c8"
+        },
+        {
+          "at": 1794900728891,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_e0e69899fad5430aa17c27cc"
+        },
+        {
+          "at": 1794900732462,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_b4ad8493392f4c6487154e6c"
+        },
+        {
+          "at": 1794900732986,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_d6fb9a590fdd4bef87700046"
+        },
+        {
+          "at": 1794900736601,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_b6f96de74ba94d93b9b766ea"
+        },
+        {
+          "at": 1794900736928,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_5cc531459aac444bbc26759c"
+        },
+        {
+          "at": 1794900740650,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_032721888f8b4623a7f9d18f"
+        },
+        {
+          "at": 1794900741170,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_3eba3caaaf7e4e71830ed34b"
+        },
+        {
+          "at": 1794900744669,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_a3c36de8b941488191a6b97f"
+        },
+        {
+          "at": 1794900744947,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_e6d2fae6a3f34d59aa49ac10"
+        },
+        {
+          "at": 1794900807039,
+          "tool": "todowrite",
+          "status": "completed",
+          "callID": "call_aded50c5000949c997af054a"
+        },
+        {
+          "at": 1794900824534,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_a4119346cfbd4f17b4a2a0ec"
+        },
+        {
+          "at": 1794900838642,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_b059b9b0b5024dcf84c66dea"
+        },
+        {
+          "at": 1794900867332,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_e48893907b8448c3862d2591"
+        },
+        {
+          "at": 1794900886780,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_85871220d41d4adaa99f117b"
+        },
+        {
+          "at": 1794900917592,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_0eed75bc81f04860976edde3"
+        },
+        {
+          "at": 1794900933767,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_eed1997b49f74426ad1acde8"
+        },
+        {
+          "at": 1794900938908,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_999f01483b6a4fb99c2d46a1"
+        },
+        {
+          "at": 1794900939387,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_58ed024b0b9e4cd49cfed64a"
+        },
+        {
+          "at": 1794900939507,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_b54100d5784046df9f205150"
+        },
+        {
+          "at": 1794900947517,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_774a31f5df7c4adba8f0a4b7"
+        },
+        {
+          "at": 1794900947714,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_b18246e2ca2840488a2f9b1c"
+        },
+        {
+          "at": 1794900958899,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_18f173410f644b7abaf03103"
+        },
+        {
+          "at": 1794900958904,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_1cb8934e48214952a83de36d"
+        },
+        {
+          "at": 1794900966645,
+          "tool": "todowrite",
+          "status": "completed",
+          "callID": "call_fcc49b5899a1434cbcac0f62"
+        }
+      ],
+      "finalResponseExcerpt": "Docs prepared and finished. Only these files were touched:\n\n- `README.md`, `SECURITY.md`, `docs/VALIDATION.md`, `docs/REVIEW.md` (updated)\n- `docs/031-MEASUREMENT.md`, `docs/031-DELIVERY.md` (new)\n\n0.3.0 results are explicitly version-scoped; 0.3.1 is labeled Preview with completed/failed/NOT TESTED tables. Final candidate 30-min FPS and final phone 70s capture are marked NOT TESTED / NOT RETRIEVED, 24h is CANCELLED_BY_USER, Windows restart/sleep are NOT_TESTED, and no completion/acceptance is claimed. No code, packaging, artifacts, or private data were modified.",
+      "recordScope": "Filtered from actual local CLI JSON events; not a complete raw transcript. Parent retained original privately."
+    },
+    {
+      "tool": "Installed OpenCode CLI",
+      "sourceRecord": "opencode-031-packaging-finalize.jsonl",
+      "originalSha256": "CB488101F0452F82270089BED8448E59E7DE7133192F260D28BF3198B3017F61",
+      "sessionID": "ses_e17ee5611ffeTz79lqtn9r0VX6",
+      "firstRecordedAt": "2026-11-17T07:32:04.708Z",
+      "lastRecordedAt": "2026-11-17T07:41:56.802Z",
+      "command": "opencode run --dir <repo> --format json [--session <existing>] <scoped task>",
+      "toolCalls": [
+        {
+          "at": 1794900725372,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_6ffe11aa0eb64068bbf026a3"
+        },
+        {
+          "at": 1794900725558,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_2953eb5d1a194be883af2b4b"
+        },
+        {
+          "at": 1794900727857,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_0fec5967f9a84f889adf4174"
+        },
+        {
+          "at": 1794900728259,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_9db82d052c1b43c4b29bc2e8"
+        },
+        {
+          "at": 1794900728667,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_9e3ff8991352479f99cac588"
+        },
+        {
+          "at": 1794900738024,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_abf73b84c2ae4c12ade75a36"
+        },
+        {
+          "at": 1794900739127,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_1ea4d7a037f1454db764fc5c"
+        },
+        {
+          "at": 1794900743679,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_5b5212eb0daf4af9961c859f"
+        },
+        {
+          "at": 1794900744071,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_4fee19c03e584dbf8caa92e2"
+        },
+        {
+          "at": 1794900748326,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_afadc9c671454c21a978a103"
+        },
+        {
+          "at": 1794900749184,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_2cf4aebc3e904a79a7df233e"
+        },
+        {
+          "at": 1794900859249,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_ba3e0eadf6d14b38b2b6cb38"
+        },
+        {
+          "at": 1794900859373,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_6103b06ceed04db5a2bbd5ef"
+        },
+        {
+          "at": 1794900898497,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_a5dc35e9a3c348f58ace4744"
+        },
+        {
+          "at": 1794900907806,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_64d2284011d74db0b293bb09"
+        },
+        {
+          "at": 1794900917613,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_4772b60f23824984afb4ae0c"
+        },
+        {
+          "at": 1794900950605,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_837a07bbb62d4dfe8210d857"
+        },
+        {
+          "at": 1794900966357,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_b9ccef83d81b4ba9a5367d68"
+        },
+        {
+          "at": 1794900971178,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_9578ba0e053147b398d8016f"
+        },
+        {
+          "at": 1794900981082,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_f8568def7984475e8f5d34b2"
+        },
+        {
+          "at": 1794900988777,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_0f91c84d4dde4a0c9056e655"
+        },
+        {
+          "at": 1794900993775,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_eb53f061738a4f0bb93dc37e"
+        },
+        {
+          "at": 1794901000634,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_24175dd6b001492e8df5a90a"
+        },
+        {
+          "at": 1794901002786,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_24762c802e6f41458ea094c2"
+        },
+        {
+          "at": 1794901015090,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_94b751b938584fb9b2949083"
+        },
+        {
+          "at": 1794901020227,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_6753ec22a1284107a4ada015"
+        },
+        {
+          "at": 1794901023713,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_e7478b8e3de548f888e37333"
+        },
+        {
+          "at": 1794901027972,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_a1db0d75f2634a08a917bbb4"
+        },
+        {
+          "at": 1794901028176,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_db7bcb97c4ec4ca287e8964f"
+        },
+        {
+          "at": 1794901029203,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_ca27a5cb575c414b95182d38"
+        },
+        {
+          "at": 1794901040642,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_2a5d3bf08e014b0ab8ac4161"
+        },
+        {
+          "at": 1794901049827,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_da9f1d78589d4784a5ceeb37"
+        },
+        {
+          "at": 1794901066585,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_3d06f93ba21547caa7c25d24"
+        },
+        {
+          "at": 1794901067912,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_6b397b49526d49608f16020f"
+        },
+        {
+          "at": 1794901076076,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_87b6a5f0c93548acb5633e3e"
+        },
+        {
+          "at": 1794901080495,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_c6fe061219a74779a5466340"
+        },
+        {
+          "at": 1794901082212,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_3f26b10cd4744fb7903a1067"
+        },
+        {
+          "at": 1794901085234,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_9b4f862392434f0b912277f9"
+        },
+        {
+          "at": 1794901091162,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_bacab1807baf4141a6fef008"
+        },
+        {
+          "at": 1794901098370,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_97c44614fa1648bdb78f20ed"
+        },
+        {
+          "at": 1794901102871,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_13bf2cc10e0f41b2b07e6629"
+        },
+        {
+          "at": 1794901115526,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_0f95305fc25d436cb9efd5b4"
+        },
+        {
+          "at": 1794901130935,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_9c1ca6d971b74a52882ac2d7"
+        },
+        {
+          "at": 1794901151982,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_9af70d0563cd4d398904d04e"
+        },
+        {
+          "at": 1794901157897,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_99aa514b1d474b17862f8b33"
+        },
+        {
+          "at": 1794901159242,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_6e8607ffa9dc4f54a8809f9a"
+        },
+        {
+          "at": 1794901178856,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_595e756224ba4e7ba26e71f5"
+        },
+        {
+          "at": 1794901185400,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_5a516f111ece4da69a79086c"
+        },
+        {
+          "at": 1794901191926,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_1c59d9efed044692b6c6882e"
+        },
+        {
+          "at": 1794901192242,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_4cd66df533124b669ddd0b33"
+        },
+        {
+          "at": 1794901199701,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_6729b3faf39d40c7a0a9d69f"
+        },
+        {
+          "at": 1794901207791,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_f6e3494d3f4042f7ab7e56d7"
+        },
+        {
+          "at": 1794901218284,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_86a67417a5b54e24a6442502"
+        },
+        {
+          "at": 1794901222436,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_735558d906a74913b432445d"
+        },
+        {
+          "at": 1794901231686,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_d7b9e089c6754e21b90b992e"
+        },
+        {
+          "at": 1794901232006,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_0d28794d6596429da9d782fe"
+        },
+        {
+          "at": 1794901247007,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_8830cfa332dc44ee8fb22287"
+        },
+        {
+          "at": 1794901291766,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_eab70b93d7d941369d53de39"
+        },
+        {
+          "at": 1794901306194,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_02db7776db8b4e04bc7834e6"
+        },
+        {
+          "at": 1794901311022,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_02eaeef18115424495a393b9"
+        },
+        {
+          "at": 1794901316250,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_ddebccf1c01248f6b9af1492"
+        }
+      ],
+      "finalResponseExcerpt": "",
+      "recordScope": "Filtered from actual local CLI JSON events; not a complete raw transcript. Parent retained original privately."
+    },
+    {
+      "tool": "Installed OpenCode CLI",
+      "sourceRecord": "opencode-031-final-independent.jsonl",
+      "originalSha256": "6383721456A939A67A4207664D093DBCE87E07ACC12D342E81500486CFDA1ECC",
+      "sessionID": "ses_e17934559ffeo4GLqQZFmrkct9",
+      "firstRecordedAt": "2026-11-17T07:33:27.852Z",
+      "lastRecordedAt": "2026-11-17T07:40:03.691Z",
+      "command": "opencode run --dir <repo> --format json [--session <existing>] <scoped task>",
+      "toolCalls": [
+        {
+          "at": 1794900809362,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_2865699f3770429d9d296e9e"
+        },
+        {
+          "at": 1794900809524,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_5055efe89e2d43e590601bbc"
+        },
+        {
+          "at": 1794900812262,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_2f2d3ffa6fa64a4787c6cb4a"
+        },
+        {
+          "at": 1794900812846,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_396ae5b5edae4cfea93299b3"
+        },
+        {
+          "at": 1794900812966,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_b898319e1519409e975df1d8"
+        },
+        {
+          "at": 1794900817094,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_e85ca4b65cdc43f49a397c08"
+        },
+        {
+          "at": 1794900817257,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_fa73356a94864e2ead67596e"
+        },
+        {
+          "at": 1794900820726,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_e6c55c98d87b454283951af4"
+        },
+        {
+          "at": 1794900824637,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_4da5bf2bf13c44da8d1db8d2"
+        },
+        {
+          "at": 1794900825406,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_38d9ad06cc4546afa46f8927"
+        },
+        {
+          "at": 1794900828512,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_14313d12727b46e3b7d1c760"
+        },
+        {
+          "at": 1794900886129,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_6977351c5183463cb670b63c"
+        },
+        {
+          "at": 1794900889556,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_3d48390de73145958ea745ea"
+        },
+        {
+          "at": 1794900890490,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_bf92eadad7fd42cf8a6488ad"
+        },
+        {
+          "at": 1794900938223,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_e1dea8ce081d4fb6b2a10572"
+        },
+        {
+          "at": 1794900941885,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_60bfc718ba45435faecf6d2e"
+        },
+        {
+          "at": 1794900942865,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_0f4734aa0a644d549d6dd0a4"
+        },
+        {
+          "at": 1794900952947,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_8013cf080c55480480574175"
+        },
+        {
+          "at": 1794900953630,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_026cec3fdfad4a108d6b9a52"
+        },
+        {
+          "at": 1794900956305,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_7aa24803f93f4c3884a2d2ff"
+        },
+        {
+          "at": 1794900983762,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_f9f4fbb165184318909b482c"
+        },
+        {
+          "at": 1794900986921,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_810d5549ab5b4334a6112236"
+        },
+        {
+          "at": 1794900990213,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_04c47053ac994e1a974e56aa"
+        },
+        {
+          "at": 1794901016822,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_06eea98aab264a279fe5c2cf"
+        },
+        {
+          "at": 1794901017655,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_9eae5554ec9443dd86e26d23"
+        },
+        {
+          "at": 1794901121572,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_e5c31e9e46e644c1b77e6e9a"
+        },
+        {
+          "at": 1794901188258,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_9c7c2c0642524340afc457a3"
+        }
+      ],
+      "finalResponseExcerpt": "I'll review the specified files. Let me start by locating them.\nI've reviewed all specified files plus the crypto channel and handshake/cursor producers to verify the claims. Writing the review now.\nWrote `OPENCODE_031_FINAL_INDEPENDENT_REVIEW.md` (only file created).\n\nResult: no blocking defect in the reviewed fence/transport/counter scope. Verified with `file:line` evidence:\n- Transactional backlog+cursor so a failed `store.accept` cannot advance the checkpoint (`CompanionStore.kt:59-71`).\n- Epoch assigned post-auth, client-overwrite-proof, stripped on Wi-Fi (`BluetoothLink.kt:120-122,131`; `CompanionActivity.kt:135`).\n- Fence rejects `<=failed`, closes only its owned socket, accept/stop clear active epoch, next handshake reads committed cursor (`HistoryGenerationFence.kt:5-8`; `BluetoothLink.kt:82,84-88,102,114,147`; `CompanionActivity.kt:105-109,149-152`).\n- `Sent` before write; counters after successful write and exclude control (`BluetoothTransport.cs:103,105-108`); ACK bounded by capacity 3 (`LatestFrameWindow.cs:7,14,17,21`); strict counters (`BluetoothCrypto.cs:50`; `BluetoothLink.kt:183`).\n\nDocumented non-blocking observations and explicit non-claims (24h cancelled, final phone trace unretrieved, no hardware/fault-injection, no acceptance).",
+      "recordScope": "Filtered from actual local CLI JSON events; not a complete raw transcript. Parent retained original privately."
+    },
+    {
+      "tool": "Installed OpenCode CLI",
+      "sourceRecord": "opencode-031-docs-retrieved.jsonl",
+      "originalSha256": "D7C73416DBF9205761B03565A66F54C5E56EC2B00DCA559655A42677689FC7CD",
+      "sessionID": "ses_e17ee4e69ffetmfpAVgqCd23yL",
+      "firstRecordedAt": "2026-11-17T07:37:05.360Z",
+      "lastRecordedAt": "2026-11-17T07:42:02.675Z",
+      "command": "opencode run --dir <repo> --format json [--session <existing>] <scoped task>",
+      "toolCalls": [
+        {
+          "at": 1794901028001,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_05a81e8d8f574c33a7892a42"
+        },
+        {
+          "at": 1794901028199,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_208ffd8f905942df94a70925"
+        },
+        {
+          "at": 1794901029274,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_6e19d0702d8449f8881c175b"
+        },
+        {
+          "at": 1794901038873,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_4955cdbc40b34ff89c4907b1"
+        },
+        {
+          "at": 1794901039576,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_9a065306157e40d0a1c858e7"
+        },
+        {
+          "at": 1794901039582,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_381b66fb9dcd42559d878c66"
+        },
+        {
+          "at": 1794901118925,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_d6cda4d739ba45cf91aa3f7e"
+        },
+        {
+          "at": 1794901125171,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_ea899bae2aa14f808342bc66"
+        },
+        {
+          "at": 1794901145236,
+          "tool": "write",
+          "status": "completed",
+          "callID": "call_eaffadf583394d37b11e7b14"
+        },
+        {
+          "at": 1794901168467,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_c918dbfbe46946a69b0acca6"
+        },
+        {
+          "at": 1794901205548,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_bb73af6552344def93054b9b"
+        },
+        {
+          "at": 1794901217368,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_fe7da1da32404c15ac99d931"
+        },
+        {
+          "at": 1794901222123,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_543f09bde8624121a2230b00"
+        },
+        {
+          "at": 1794901226910,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_215583c140b64558a4345fe3"
+        },
+        {
+          "at": 1794901227605,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_52a2234e4d924017a6f46b31"
+        },
+        {
+          "at": 1794901228078,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_6fc20fcebf224a85a8cb855e"
+        },
+        {
+          "at": 1794901235437,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_44065704a5de458c9098b166"
+        },
+        {
+          "at": 1794901244879,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_a20c67d1702f4191893f90bd"
+        },
+        {
+          "at": 1794901248257,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_2eb72acbd666476e90b81618"
+        },
+        {
+          "at": 1794901269232,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_c73129600e5e430ba2e4b3a5"
+        },
+        {
+          "at": 1794901275244,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_8cdbafda5f9c4cafbc78169a"
+        },
+        {
+          "at": 1794901276412,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_672a94d630e74473a4c3cf95"
+        },
+        {
+          "at": 1794901276916,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_2b6258c95b5346ebb5b0b7dc"
+        },
+        {
+          "at": 1794901282336,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_4b564a91a5b04cc18cd7d8cb"
+        },
+        {
+          "at": 1794901293098,
+          "tool": "edit",
+          "status": "completed",
+          "callID": "call_5d6364d1b7e34f7fbfdc16bf"
+        },
+        {
+          "at": 1794901298622,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_8b3f135ba70e4acc97bd69be"
+        },
+        {
+          "at": 1794901298742,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_c745ade6259f422ca42fe139"
+        },
+        {
+          "at": 1794901299229,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_7cff751f9d204dd191f8ce4f"
+        },
+        {
+          "at": 1794901313159,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_469f6fd75c414692b7d040e1"
+        },
+        {
+          "at": 1794901313982,
+          "tool": "read",
+          "status": "completed",
+          "callID": "call_6ba9b4005b624f0a99716d2f"
+        },
+        {
+          "at": 1794901315110,
+          "tool": "bash",
+          "status": "completed",
+          "callID": "call_1396161efc374ebb8e0202b7"
+        }
+      ],
+      "finalResponseExcerpt": "Updated the same 6 docs only.\n\n- Final 70s phone capture now marked retrieved/analyzed: FPS 59.295125, 1% Low 29.935753, missed 1.142074%, dropped buffers 0%.\n- Network age (incl. uncertainty) P95/P99 279.690625/397.009584 ms passes the two network budgets only; CPU/RAM first-display P95 334.41626/334.21094 ms still exceeds 300 ms.\n- Jank 51.77% explicitly separated from dropped frames; DOM 688 vs RX 687 explained as boundary state.\n- Strict 10Hz / stable 60fps remain not fully met; final normal-use 30-min FPS, 24h, OS reboot/sleep remain NOT TESTED/CANCELLED.\n- Added links to `docs/reviews/results/*.json` and `docs/reviews/INVOCATIONS.json` in README, SECURITY, VALIDATION, REVIEW, MEASUREMENT, and DELIVERY.",
+      "recordScope": "Filtered from actual local CLI JSON events; not a complete raw transcript. Parent retained original privately."
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "Freebuff/FREEBUFF_REVIEW_031.md",
+      "originalSha256": "7412589684986DBB97F4F5903BD103262835D1BFBF9CAED46D62B0F1A63FF2EA",
+      "publicSha256": "7412589684986DBB97F4F5903BD103262835D1BFBF9CAED46D62B0F1A63FF2EA",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "Freebuff/FREEBUFF_TEST_PLAN_031.md",
+      "originalSha256": "9025B8E944524D34A6B1622F5EA3310B30FB913F560F463C4ED67B69DAC042FC",
+      "publicSha256": "9025B8E944524D34A6B1622F5EA3310B30FB913F560F463C4ED67B69DAC042FC",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "Freebuff/FREEBUFF_FINAL_REVIEW.md",
+      "originalSha256": "F98DCE4C5B5BB623F25C7083D6E5F6CF2B931A2467C640FB1FF74885A3B471B4",
+      "publicSha256": "F98DCE4C5B5BB623F25C7083D6E5F6CF2B931A2467C640FB1FF74885A3B471B4",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "Freebuff/FREEBUFF_MEASUREMENT_REVIEW.md",
+      "originalSha256": "CD009B84522FB8F0D530260DCC850AF74B9DF9BB4CD0A4D1D1986203327FA7B2",
+      "publicSha256": "CD009B84522FB8F0D530260DCC850AF74B9DF9BB4CD0A4D1D1986203327FA7B2",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "Freebuff/FREEBUFF_RECHECK.md",
+      "originalSha256": "45C29679EBDE2419E226F30E01373EF12C0B9DE8ACDA557EB63D7832833189BA",
+      "publicSha256": "45C29679EBDE2419E226F30E01373EF12C0B9DE8ACDA557EB63D7832833189BA",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "Freebuff/FREEBUFF_ACCEPTANCE_CHECKS.mjs",
+      "originalSha256": "A46AA5B438BBFC87937F33BE9D45ABA41F1B97D9407B48B37A1BDDBC57AC2535",
+      "publicSha256": "A46AA5B438BBFC87937F33BE9D45ABA41F1B97D9407B48B37A1BDDBC57AC2535",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "Freebuff/checks-preliminary-thirty.txt",
+      "originalSha256": "B4E36B24A69782D9E0BA0DFB2A26A52C618B179200CEEA31FFAACA4535ECE58B",
+      "publicSha256": "B4E36B24A69782D9E0BA0DFB2A26A52C618B179200CEEA31FFAACA4535ECE58B",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "Freebuff/checks-final-short.txt",
+      "originalSha256": "EC820920D9E7D81A6BB04AB6F1C2B4B5BD9619401093AC37C1764A1322AE5495",
+      "publicSha256": "EC820920D9E7D81A6BB04AB6F1C2B4B5BD9619401093AC37C1764A1322AE5495",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "Freebuff/requests/BASELINE_REQUEST.md",
+      "originalSha256": "B70A04F37D8EADDBA58D2346FE2FA8C786168B8D107A0DB12F073A33B0D5C375",
+      "publicSha256": "B70A04F37D8EADDBA58D2346FE2FA8C786168B8D107A0DB12F073A33B0D5C375",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "Freebuff/requests/REVIEW_REQUEST.md",
+      "originalSha256": "EC72A3E62E3FAE3B9C60C5A2EAFDECA4FC7C5F93FF8458A7DB69186BBDDBE8E6",
+      "publicSha256": "EC72A3E62E3FAE3B9C60C5A2EAFDECA4FC7C5F93FF8458A7DB69186BBDDBE8E6",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "Freebuff/requests/RECHECK_REQUEST.md",
+      "originalSha256": "9F9887095F344AE80BD5297E28363888EFEC14D48DF1944E45EACDB3056CFC3A",
+      "publicSha256": "9F9887095F344AE80BD5297E28363888EFEC14D48DF1944E45EACDB3056CFC3A",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "Freebuff/requests/FINAL_FENCE_REQUEST.md",
+      "originalSha256": "1B05B84F949A604F2D8115A5B6BBFDEB01D195305DD4D6F0506E6ABDE446347B",
+      "publicSha256": "1B05B84F949A604F2D8115A5B6BBFDEB01D195305DD4D6F0506E6ABDE446347B",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "Freebuff/version.txt",
+      "originalSha256": "BDE96E063A6FF403019A636C728BFC85375C2C88B1A82F4E0E3AFF6D94AC5B22",
+      "publicSha256": "BDE96E063A6FF403019A636C728BFC85375C2C88B1A82F4E0E3AFF6D94AC5B22",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "Freebuff/actual-output-excerpt.txt",
+      "originalSha256": "F22BEEB34D408A3C3A3DE99264E086BE442A832BE97FA5AE66088BFAB9C9212E",
+      "publicSha256": "F22BEEB34D408A3C3A3DE99264E086BE442A832BE97FA5AE66088BFAB9C9212E",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "OpenCode/OPENCODE_031_HISTORY_REVIEW.md",
+      "originalSha256": "9E57CB57155E019714B4EF8111C6948D276CED8FFE187DC62084553A552BC925",
+      "publicSha256": "9E57CB57155E019714B4EF8111C6948D276CED8FFE187DC62084553A552BC925",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "OpenCode/OPENCODE_031_PERFORMANCE_REVIEW.md",
+      "originalSha256": "0EC53AC2D3ECD553581221BE1C19CE0D3E7611772603A2ADE6B5E3B544C04073",
+      "publicSha256": "0EC53AC2D3ECD553581221BE1C19CE0D3E7611772603A2ADE6B5E3B544C04073",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "OpenCode/OPENCODE_031_PERSISTENCE_REVIEW.md",
+      "originalSha256": "FC2DE661D288069D697352B5FC63CC394629BBF56DA16A0A67EC90808E7D0BB5",
+      "publicSha256": "FC2DE661D288069D697352B5FC63CC394629BBF56DA16A0A67EC90808E7D0BB5",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "OpenCode/OPENCODE_031_STABILITY_REVIEW.md",
+      "originalSha256": "F7E74D702FB5DFB8A45412F0BEECFA191C290589772A8079112B19CAEF326ABA",
+      "publicSha256": "C0FC93D97235E4294CE1FBC60F0AF2C80A3C46100077830A83215D29735DA36B",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "OpenCode/OPENCODE_031_PACKAGING_REVIEW.md",
+      "originalSha256": "FC5F7C17CCBF97C03E0C6EEBC3DCB4990320265BF5276B390DD3C5B3F887A67E",
+      "publicSha256": "FC5F7C17CCBF97C03E0C6EEBC3DCB4990320265BF5276B390DD3C5B3F887A67E",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "OpenCode/OPENCODE_031_FINAL_INDEPENDENT_REVIEW.md",
+      "originalSha256": "4E930BED41C58CC4FFD865D844A73631C080FFD3D3D082C8A2502C08C42F5F0D",
+      "publicSha256": "4E930BED41C58CC4FFD865D844A73631C080FFD3D3D082C8A2502C08C42F5F0D",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "results/final-windows.json",
+      "originalSha256": "D3E8461A5699E3062F8AE388F462E579FF0C369EECA5AE3965DF64A2B3208331",
+      "publicSha256": "D3E8461A5699E3062F8AE388F462E579FF0C369EECA5AE3965DF64A2B3208331",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "results/final-phone-instrumented.json",
+      "originalSha256": "37454128CDBEBD6D74E8B51A9A56BF3013F4CD20FC8A6729B7AC3153460BC925",
+      "publicSha256": "37454128CDBEBD6D74E8B51A9A56BF3013F4CD20FC8A6729B7AC3153460BC925",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "results/preliminary-thirty.json",
+      "originalSha256": "2F152C318D210FB4FCD3809B3DFEF09825842067A99D88FBF477FFFFC7B43611",
+      "publicSha256": "2F152C318D210FB4FCD3809B3DFEF09825842067A99D88FBF477FFFFC7B43611",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "results/testing-scope.json",
+      "originalSha256": "A05050B5B07076B317FCBFF201E3E8D3DBC371BFAA238C97FE6116D9B5235DB4",
+      "publicSha256": "A05050B5B07076B317FCBFF201E3E8D3DBC371BFAA238C97FE6116D9B5235DB4",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "results/final-agent-existing-lifetime-cpu.json",
+      "originalSha256": "C06941AACD3065FFBE640588AE7F711806E8F2873E72B7622544660963C1A434",
+      "publicSha256": "C06941AACD3065FFBE640588AE7F711806E8F2873E72B7622544660963C1A434",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "results/installed-apk-verification.json",
+      "originalSha256": "E659827C31669466116A8DB41D3ECEA6652F498843B0F4205F0026EF731BF7E6",
+      "publicSha256": "E659827C31669466116A8DB41D3ECEA6652F498843B0F4205F0026EF731BF7E6",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "results/portable-analyzer-check.json",
+      "originalSha256": "72741DA6BDDFCC9C2DBBF40BE7212C1A01140BA0C083B37F1B8D0B6B8D1F9502",
+      "publicSha256": "72741DA6BDDFCC9C2DBBF40BE7212C1A01140BA0C083B37F1B8D0B6B8D1F9502",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    },
+    {
+      "file": "results/backup-preserved.json",
+      "originalSha256": "5AA7026B75BC715A6004CAE1004CE7B6AAD2CA4A8BB873C6EFA94F91912AC0CD",
+      "publicSha256": "5AA7026B75BC715A6004CAE1004CE7B6AAD2CA4A8BB873C6EFA94F91912AC0CD",
+      "redaction": "Local workspace/profile paths replaced; original retained privately. Review text including mistakes retained; see disposition."
+    }
+  ],
+  "parentFinalization": {
+    "packagingCli": "Parent interrupted the packaging CLI after script edits, report and static checks were produced; no final CLI response was received. No archive or hardware test is attributed to that agent.",
+    "completedByParent": [
+      "Executed portable analyzer against already-recorded final trace; 10 reported metric comparisons exactly matched original analyzer",
+      "Generated explicit public review whitelist",
+      "Ran packaging, archive manifest/source-input verification and identity/known-secret scan; see outer check files"
+    ],
+    "snapshotScope": "Some original reviewer evidence-status statements precede USB reconnection. Final phone CSV/trace have since been retrieved and analyzed; original reports retained with this addendum rather than silently rewritten."
+  }
+}

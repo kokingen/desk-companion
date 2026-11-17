@@ -1,0 +1,3 @@
+Tmds.DBus 0.95.1: MIT, copyright attribution is supplied by the included .nuspec package metadata. The accompanying MIT text is the standard license identified by that package; an exact upstream COPYING fetch timed out. Source: https://github.com/tmds/Tmds.DBus/tree/491bde2c16d65a7904397933cffa24e15e45eb2a
+Linux.Bluetooth 5.67.1: Apache-2.0, Copyright 2024 Xeno Innovations, Inc.; metadata and standard Apache license included. Source: https://github.com/SuessLabs/Linux.Bluetooth/tree/ea701ec825a232df7beffe6e6c8caa327a7bb5d8
+These are transitive references of the generic 32feet .NET package. Windows uses its Win32 Bluetooth implementation.

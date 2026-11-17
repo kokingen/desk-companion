@@ -1,0 +1,64 @@
+# .NET
+bin/
+obj/
+.vs/
+*.user
+
+# Android / Gradle
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+android/.kotlin/
+*.iml
+
+# Signing keys never belong in the repo
+*.jks
+*.keystore
+*.p12
+
+# Build output
+dist/
+
+# Local tooling / personal data
+.temp_files/
+.playwright-mcp/
+.claude/
+extras/**/backup/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# runtime data written by test runs of the agent (never commit settings or tokens)
+.config/
+.local/
+config.json.bak
+
+# UI tests (tools/ui-tests)
+.ui-site/
+ui-test-report/
+tools/ui-tests/node_modules/
+tools/ui-tests/test-results/
+
+.wrongstack/
+!/.wrongstack/
+/.wrongstack/*
+!/.wrongstack/project.json
+
+
+*.log
+tools/companion-ui/node_modules/
+tools/companion-ui/test-results/
+**/data/
+# Runtime secrets are excluded by directory/name; do not globally ignore license text files.
+**/private-data/
+**/logs/
+*.pfx
+*.pem
+*.pdb
+**/admin-token.txt
+**/phone-token.txt
+**/bluetooth-phone.txt
+screenshots/

@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "InTheHand.Net.Bluetooth": {
+        "type": "Direct",
+        "requested": "[4.2.5, )",
+        "resolved": "4.2.5",
+        "contentHash": "KmygNTiX7sESG8q0TE7tTuEJ7RDAbp4Ulpzy3fSRjEOxEMv48OZAPXnkvLWm48wtDJSJfBT6XbO1xIklrQba3Q==",
+        "dependencies": {
+          "Linux.Bluetooth": "5.67.1",
+          "Tmds.DBus": "0.95.1"
+        }
+      },
+      "QRCoder": {
+        "type": "Direct",
+        "requested": "[1.8.1, )",
+        "resolved": "1.8.1",
+        "contentHash": "aGfRFpU/IPexAtEOEXCNxC3fMCAqgn6kqALRvXt6LxVAW0VolSDGHiyrY+o2CJgTITOsMpsrsDi7svMJaJ9Vfg==",
+        "dependencies": {
+          "System.Drawing.Common": "6.0.0"
+        }
+      },
+      "Linux.Bluetooth": {
+        "type": "Transitive",
+        "resolved": "5.67.1",
+        "contentHash": "DkSxrPTWGn6Wx0d+/HfCsy/F82Ttfb9DLnWVqBDem46zftrm75UDx0seP6Ii0EljjWTu9Dwgb9T3QzzdSQr5Ow==",
+        "dependencies": {
+          "Tmds.DBus": "0.20.0"
+        }
+      },
+      "Microsoft.Win32.SystemEvents": {
+        "type": "Transitive",
+        "resolved": "6.0.0",
+        "contentHash": "hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A=="
+      },
+      "System.Drawing.Common": {
+        "type": "Transitive",
+        "resolved": "6.0.0",
+        "contentHash": "NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "6.0.0"
+        }
+      },
+      "Tmds.DBus": {
+        "type": "Transitive",
+        "resolved": "0.95.1",
+        "contentHash": "2mLo+choDFkVlpYN1dcAmFESclH/LoMGg4whvvV4RFM9xbBniRwqNb0/Fe3/z4RCzXSQi+Gb6SzM2c19WcoP3Q=="
+      }
+    },
+    "net10.0/win-x64": {
+      "Microsoft.Win32.SystemEvents": {
+        "type": "Transitive",
+        "resolved": "6.0.0",
+        "contentHash": "hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A=="
+      },
+      "System.Drawing.Common": {
+        "type": "Transitive",
+        "resolved": "6.0.0",
+        "contentHash": "NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "6.0.0"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,877 @@
+﻿[
+    {
+        "path":  ".gitignore",
+        "bytes":  960,
+        "sha256":  "80851abb9eea6ef4d60dc9d3ad54db4f3e964405b676e45f7abd371483a9d1c6"
+    },
+    {
+        "path":  "agent/Max3.Agent/AssemblyInfo.cs",
+        "bytes":  84,
+        "sha256":  "a7e906c8aeea9eb8d1a161ea2fa2548eb6b78ef22fa5a71c5093303a9e5f139e"
+    },
+    {
+        "path":  "agent/Max3.Agent/BluetoothCrypto.cs",
+        "bytes":  4443,
+        "sha256":  "c3d468437dacde31a9dce637b0a18e953239c4c6c334c36a8039325eb7e4d122"
+    },
+    {
+        "path":  "agent/Max3.Agent/BluetoothTelemetry.cs",
+        "bytes":  2130,
+        "sha256":  "af98cd60f553b481d188220f68667937ee8379108e9c11959d129113fcfee3a9"
+    },
+    {
+        "path":  "agent/Max3.Agent/BluetoothTransport.cs",
+        "bytes":  13224,
+        "sha256":  "07b8e18fefb7f9640204544da1f201c5cb3c1745c0ffbe91e0255cd73232f6a4"
+    },
+    {
+        "path":  "agent/Max3.Agent/CodexDesktopState.cs",
+        "bytes":  8251,
+        "sha256":  "9f2ecf4194b8aa732eefe43982b1c05c49f1cf436d363d7c55fbd02e0929d041"
+    },
+    {
+        "path":  "agent/Max3.Agent/CodexEvents.cs",
+        "bytes":  7110,
+        "sha256":  "40911a731aa7c5608ba7ba56772168742d91bfb14b68082b189f1774e7c90926"
+    },
+    {
+        "path":  "agent/Max3.Agent/Collector.cs",
+        "bytes":  14971,
+        "sha256":  "e476b8de55a29653db37a70215300b9bae112ccc5b46d1013764e074b93a3000"
+    },
+    {
+        "path":  "agent/Max3.Agent/DisposeOnce.cs",
+        "bytes":  705,
+        "sha256":  "0a4d206c858bf0309340d8b923faf812b1f42eefe70abfd5353ac3455789a4bb"
+    },
+    {
+        "path":  "agent/Max3.Agent/LanEndpoints.cs",
+        "bytes":  2635,
+        "sha256":  "49b7c1ff0cc2d1b22ebf5a7a20e2d651ea0b89fab04932adbfd50abffa66be91"
+    },
+    {
+        "path":  "agent/Max3.Agent/LatestFrameWindow.cs",
+        "bytes":  1662,
+        "sha256":  "5184553e9cd725e7af93647a14342b7ff35f8c2a0823b5b14f0e7475249f132f"
+    },
+    {
+        "path":  "agent/Max3.Agent/LocalAdmin.cs",
+        "bytes":  2502,
+        "sha256":  "de553dd2ced6db573ff4191b4e9995725e88b73f555964823e61c50a82fd1cbf"
+    },
+    {
+        "path":  "agent/Max3.Agent/Max3.Agent.csproj",
+        "bytes":  1172,
+        "sha256":  "2a23a37edbb4abdc3555226bc510a6ea082b4b6d148038d9ab4ecefa5a41931b"
+    },
+    {
+        "path":  "agent/Max3.Agent/packages.lock.json",
+        "bytes":  2359,
+        "sha256":  "82e35358af7f0b62dfe8eb0348dfc273f7bcef55e55afc5edeeed7a30e9dda0b"
+    },
+    {
+        "path":  "agent/Max3.Agent/PairClaim.cs",
+        "bytes":  180,
+        "sha256":  "4e5b314519fa56aa5efd13d36ab1fa6eb88296e55dc8e0f0058f1650b390c09d"
+    },
+    {
+        "path":  "agent/Max3.Agent/pairing.html",
+        "bytes":  4290,
+        "sha256":  "bc0864e1d0ab0808a932de70ec74a904cc3c5429fb773c6ba56bc671f5a63f87"
+    },
+    {
+        "path":  "agent/Max3.Agent/Program.cs",
+        "bytes":  13673,
+        "sha256":  "525d9131221a615a3f9f894f1e7b625a02d801e0600e9e32e3c69b846911645d"
+    },
+    {
+        "path":  "agent/Max3.Agent/WireState.cs",
+        "bytes":  478,
+        "sha256":  "87442c466e817de11afbbd9d41d375906d07f3e9c471c7f3433b08c2671e806f"
+    },
+    {
+        "path":  "agent/Max3.Tests/DesktopStateTests.cs",
+        "bytes":  2944,
+        "sha256":  "b891f8215d1457229bcbf5707b56154d13116b06c816c025614f9edaa740799f"
+    },
+    {
+        "path":  "agent/Max3.Tests/HistoryResumeTests.cs",
+        "bytes":  1853,
+        "sha256":  "1ed33cd9f0404e5b30574513015688d191366c5f73e7aad9ef8270ab7207c2d2"
+    },
+    {
+        "path":  "agent/Max3.Tests/LatestWindowTests.cs",
+        "bytes":  1203,
+        "sha256":  "0a4a25334067032600510d69881c1ba3078c2f5a2f7f15f12964060f53d0b6ab"
+    },
+    {
+        "path":  "agent/Max3.Tests/LocalAdminTests.cs",
+        "bytes":  4455,
+        "sha256":  "606971527403cbfca714e7c8474952aacf36db156e153056d115c5e97bf2d7b7"
+    },
+    {
+        "path":  "agent/Max3.Tests/Max3.Tests.csproj",
+        "bytes":  303,
+        "sha256":  "5957e882df4a5abf03bc07cb2ec20e2dbde3852681fb9db8cd6b9b860ef94e06"
+    },
+    {
+        "path":  "agent/Max3.Tests/packages.lock.json",
+        "bytes":  2489,
+        "sha256":  "f5694af7214264ffe77560cf74686bcdb013043164fd31779428b7ff24e25c9f"
+    },
+    {
+        "path":  "agent/Max3.Tests/ProbeCleanup.cs",
+        "bytes":  173,
+        "sha256":  "4d8dad9eae00caf48fb9c636c15ef538f576c3d444cb350f8949501345b3b09b"
+    },
+    {
+        "path":  "agent/Max3.Tests/Program.cs",
+        "bytes":  10904,
+        "sha256":  "c9822cddffe0398f4c7d2914b538f72f12a77bd750a6bbbec780bee2f82378cd"
+    },
+    {
+        "path":  "agent/Max3.Tests/TelemetryTests.cs",
+        "bytes":  2080,
+        "sha256":  "84fcdfb55c7c21708b2242008098cc1facfb24c6a97ad89285840dd3d14190f6"
+    },
+    {
+        "path":  "agent/PhoneBox.Agent/AppPaths.cs",
+        "bytes":  6326,
+        "sha256":  "3418e1e594f77410f884ee9bfe6cbb90f3c353f5246c2eadb318f108e80dd776"
+    },
+    {
+        "path":  "agent/PhoneBox.Agent/Lan.cs",
+        "bytes":  6763,
+        "sha256":  "786c05fcae21961c07571cba2ff2ddc05632930344a6a64a79171da3e2cf4df2"
+    },
+    {
+        "path":  "agent/PhoneBox.Agent/Pairing.cs",
+        "bytes":  5224,
+        "sha256":  "8dbcf61120318e593b0c0e1a2bbfecdf01110b428e29b6a4c37879e10813193e"
+    },
+    {
+        "path":  "agent/PhoneBox.Agent/SessionMonitor.cs",
+        "bytes":  13574,
+        "sha256":  "049e049e4670beb0866773abc14739c2ac3ec1fc9a1627d66446931f087c96b4"
+    },
+    {
+        "path":  "android/app/build.gradle.kts",
+        "bytes":  2165,
+        "sha256":  "2a8ca56b58ff520f9470d432cd27f6ebc6bc64150d2e27f65857107824a5fc52"
+    },
+    {
+        "path":  "android/app/src/main/AndroidManifest.xml",
+        "bytes":  2836,
+        "sha256":  "54080fc4f0bc9f45cb477abc1add6f55cdff78d6b35b311e463d6182e5c3c6d1"
+    },
+    {
+        "path":  "android/app/src/main/assets/companion/app.js",
+        "bytes":  258096,
+        "sha256":  "fbff4b7975690e66a6149950cf183a4045ef1f912856c459f6350c48649e5dc8"
+    },
+    {
+        "path":  "android/app/src/main/assets/companion/AVATAR-CORE-LICENSE.txt",
+        "bytes":  1101,
+        "sha256":  "60971f83ef98a4205426c1d7b4049850721c93a0a0b03d8760f83199e3a331b3"
+    },
+    {
+        "path":  "android/app/src/main/assets/companion/AVATAR-WEB-LICENSE.txt",
+        "bytes":  1101,
+        "sha256":  "60971f83ef98a4205426c1d7b4049850721c93a0a0b03d8760f83199e3a331b3"
+    },
+    {
+        "path":  "android/app/src/main/assets/companion/index.html",
+        "bytes":  2502,
+        "sha256":  "4b8ec5833794af7346d6e4933b22075ce2c59ce4de7fd96178fdda994eb5f92f"
+    },
+    {
+        "path":  "android/app/src/main/assets/companion/licenses/ajv.txt",
+        "bytes":  1090,
+        "sha256":  "a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3"
+    },
+    {
+        "path":  "android/app/src/main/assets/companion/licenses/fast-deep-equal.txt",
+        "bytes":  1074,
+        "sha256":  "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+    },
+    {
+        "path":  "android/app/src/main/assets/companion/licenses/fast-uri.txt",
+        "bytes":  1813,
+        "sha256":  "b010b0dfdfdb23d7396e03b82cd4621fc9bb8f95d6b0aea70b9c24e12074c786"
+    },
+    {
+        "path":  "android/app/src/main/assets/companion/licenses/json-schema-traverse.txt",
+        "bytes":  1074,
+        "sha256":  "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+    },
+    {
+        "path":  "android/app/src/main/assets/companion/licenses/require-from-string.txt",
+        "bytes":  1128,
+        "sha256":  "6ee0feb1f6ef996ff5a68600f8cf98909cf412d39ef3cdceaefd87d636fa1b7f"
+    },
+    {
+        "path":  "android/app/src/main/assets/companion/style.css",
+        "bytes":  4391,
+        "sha256":  "98d183f7c0311db37d0ce0405e6004912328e8e06d82a41caf15b7df635390c9"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/appearance.css",
+        "bytes":  1567,
+        "sha256":  "af4812a5fc4e76507a22b9e3ccb8988544b4f870cca34e7c2916414492378c08"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/appearance.js",
+        "bytes":  5412,
+        "sha256":  "e2eb2edf2f86db041e24676556d0ba3cc64f441dfc5fc9d979a9e44443cca2aa"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/controls.css",
+        "bytes":  8220,
+        "sha256":  "3d0d98ec8a5eb4d738cfd5f5b95ff442c2f338c692776e60058b7fe737467af8"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/i18n.js",
+        "bytes":  136200,
+        "sha256":  "49b092c15612fe7ba70f58e30eb80e0bb9ffff6869283333020c886ba4a1c47f"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/index.html",
+        "bytes":  4612,
+        "sha256":  "cf861e5d73a83e915f97ae28ee658ccf0ed404f688975312e411d6703fe880f4"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/main.js",
+        "bytes":  84369,
+        "sha256":  "12275801396c31ab770e37fd22d5218c1c6be33b97813930383c8410b2a7cdbe"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/registry.js",
+        "bytes":  216,
+        "sha256":  "cb006b5d06cb6f296c9cb798888ae628a83916becf9258fda2c868a8087d645d"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/style.css",
+        "bytes":  72812,
+        "sha256":  "5e378bdfe29c67182f49c97f747ac5e2874bac3eb52b65e3d33aecf300717d29"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/widgets/basic.js",
+        "bytes":  54735,
+        "sha256":  "17345315bebc0394f08e9884a9879b9b221c6d1ec5d671d12feb12eab572939b"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/widgets/controls.js",
+        "bytes":  42018,
+        "sha256":  "90767f9d983d1efa1fdbcc3f41688ef27c10fd9cd7b017b49448c0048228bb61"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/widgets/helpers.js",
+        "bytes":  3059,
+        "sha256":  "7e40a4c32c246480f2c66d178358c2487144c135e8e6181545742e675c26e3b9"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/widgets/pc.js",
+        "bytes":  39669,
+        "sha256":  "766282ec0ffc9c7dd3f5afcd55a8b2ac605476ea2bce06b756aea58ba3d434b4"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/widgets/sky.js",
+        "bytes":  6078,
+        "sha256":  "dd076dfacf20d2a0a90c3c8b9d9147374f8d48eda12a3eb65227450335f49c8c"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/widgets/stack.js",
+        "bytes":  10705,
+        "sha256":  "7e5b8d943c6a357020756f8b989bee1063301d2ff08e8ce42ff860a05a718925"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/widgets/time.js",
+        "bytes":  15026,
+        "sha256":  "83148930c210d707a736c45e89842ec01a48643ab080d1fd94f62c6c237ed33a"
+    },
+    {
+        "path":  "android/app/src/main/assets/www/widgets/web.js",
+        "bytes":  5357,
+        "sha256":  "0c7b04a31ba0035e452b15b037c9b669a2de2dbafaba94e19a5969273566b782"
+    },
+    {
+        "path":  "android/app/src/main/java/net/oxog/phonebox/deskpanel/AgentLink.kt",
+        "bytes":  20279,
+        "sha256":  "6bb4bbdc61d2c480aece913cfdded4038249b21e7eccc7e3bb49e67abb58947d"
+    },
+    {
+        "path":  "android/app/src/main/java/net/oxog/phonebox/deskpanel/AgentStream.kt",
+        "bytes":  3330,
+        "sha256":  "6c97363533698cdf8a042183c6f72a1afa00bea6c023433fe610716a012ce354"
+    },
+    {
+        "path":  "android/app/src/main/java/net/oxog/phonebox/deskpanel/BluetoothLink.kt",
+        "bytes":  14173,
+        "sha256":  "66c24b80cb1390df33ac165bf06478fce11ca13b1ea58034634b58ce2dbeb840"
+    },
+    {
+        "path":  "android/app/src/main/java/net/oxog/phonebox/deskpanel/BluetoothTelemetry.kt",
+        "bytes":  2427,
+        "sha256":  "8bec692334dca29332f68192b480f5fd20440e0c976a9730951695c7d11fb1d8"
+    },
+    {
+        "path":  "android/app/src/main/java/net/oxog/phonebox/deskpanel/CompanionActivity.kt",
+        "bytes":  15021,
+        "sha256":  "b697c8fc6b61f5eadb7aa67a379f8c64e88d0c35ae13e672525a03495e2203eb"
+    },
+    {
+        "path":  "android/app/src/main/java/net/oxog/phonebox/deskpanel/CompanionPerformance.kt",
+        "bytes":  11410,
+        "sha256":  "f2951d3da0f142e6b092e2e953e3ce5e6a22ecc1b03ce54fc962604558a4c44d"
+    },
+    {
+        "path":  "android/app/src/main/java/net/oxog/phonebox/deskpanel/CompanionSampleFreshness.kt",
+        "bytes":  1324,
+        "sha256":  "ebbe09d3740fa9eb510332531d6e2edeeb93f239eb136f7cc2fc5858a24a77ce"
+    },
+    {
+        "path":  "android/app/src/main/java/net/oxog/phonebox/deskpanel/CompanionStore.kt",
+        "bytes":  9555,
+        "sha256":  "dbd33d875d5d32572a19a371965d0aa24505b3b8ebf32ff84de06a912fae02b7"
+    },
+    {
+        "path":  "android/app/src/main/java/net/oxog/phonebox/deskpanel/HistoryGenerationFence.kt",
+        "bytes":  421,
+        "sha256":  "585214c0a1454e7e7a253a810bbbbcca50aa2bd5e33f90f3004f94e5bf528dad"
+    },
+    {
+        "path":  "android/app/src/main/java/net/oxog/phonebox/deskpanel/MainActivity.kt",
+        "bytes":  20709,
+        "sha256":  "feb50b218a507a6b7214cdad20ccd371f243b1baafeff3f6ff0125f5f374a6e8"
+    },
+    {
+        "path":  "android/app/src/main/res/drawable/ic_launcher_fg.xml",
+        "bytes":  961,
+        "sha256":  "6adfa7ab0eea376b7ba59d5292c80356048e4226383f0aede181bb07d4eff587"
+    },
+    {
+        "path":  "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+        "bytes":  245,
+        "sha256":  "b8ee9c97e111631264703dd43343235766cf85e2e267145441c7da2200b4178b"
+    },
+    {
+        "path":  "android/app/src/main/res/values/themes.xml",
+        "bytes":  508,
+        "sha256":  "69a43c8ae4bbcb2195c76d3f8184d97363d97c4086dd36ff922288d8ca64735f"
+    },
+    {
+        "path":  "android/app/src/main/res/xml/network_security_config.xml",
+        "bytes":  380,
+        "sha256":  "33d254d2dd872b9f1cccd68ed9746c8326c76d25fe60331b16dd32ff807dcdf4"
+    },
+    {
+        "path":  "android/app/src/test/java/net/oxog/phonebox/deskpanel/CompanionFreshnessChecks.kt",
+        "bytes":  2184,
+        "sha256":  "626e87c8812d7f82db9444c1cccecde01963ab428e7e3a24c9dadfcc2cf87e04"
+    },
+    {
+        "path":  "android/app/src/test/java/net/oxog/phonebox/deskpanel/HistoryGenerationChecks.kt",
+        "bytes":  1410,
+        "sha256":  "2cf7b3ae9303450980ba898c35efff84dd5399fcd296ff14b7c75353dc7ccae9"
+    },
+    {
+        "path":  "android/build.gradle.kts",
+        "bytes":  142,
+        "sha256":  "50425357e4449207a6e3098fa4f4dc66864a870859025051fc809589ddb858df"
+    },
+    {
+        "path":  "android/gradle.properties",
+        "bytes":  136,
+        "sha256":  "5ff4359bb22b9436ec644207f9240f4e47b9a733fe03ba402c77944a05283574"
+    },
+    {
+        "path":  "android/gradle/verification-metadata.xml",
+        "bytes":  109592,
+        "sha256":  "3e3aaa56af6252b8a8d067043e39b94c6d837d3fffcd66c1502676e972477ebd"
+    },
+    {
+        "path":  "android/gradle/wrapper/gradle-wrapper.jar",
+        "bytes":  43583,
+        "sha256":  "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046"
+    },
+    {
+        "path":  "android/gradle/wrapper/gradle-wrapper.properties",
+        "bytes":  253,
+        "sha256":  "697470de4156fe8a8f815967353d17fb1154e1c779b441135bd60ddaa4930c31"
+    },
+    {
+        "path":  "android/gradlew",
+        "bytes":  8762,
+        "sha256":  "a3648413b47ef77af21d5ebc36c687c7d103aaef3e17f33de7d4f080a6f300a3"
+    },
+    {
+        "path":  "android/gradlew.bat",
+        "bytes":  2966,
+        "sha256":  "57931b17dd228e5c24dac90e815d0bf82477e831a4618dfab4136f5446b42a9f"
+    },
+    {
+        "path":  "android/settings.gradle.kts",
+        "bytes":  327,
+        "sha256":  "f6a989575ff9e80928b0dbab6392c54d2cbe0e490d3109b83d3c94fe984fc937"
+    },
+    {
+        "path":  "docs/031-DELIVERY.md",
+        "bytes":  7134,
+        "sha256":  "420ed5cfb1632d3d6f8eba82d0a965b78a6d3c62e24aeefa86d147518cd618cd"
+    },
+    {
+        "path":  "docs/031-MEASUREMENT.md",
+        "bytes":  9528,
+        "sha256":  "0d4e8a3f963f836a4d36e02a1a034277a0b8a6b67c0226006e98022d83312a93"
+    },
+    {
+        "path":  "docs/REVIEW.md",
+        "bytes":  5558,
+        "sha256":  "851497e1ef8b0e2603bea575719a085a2f123d0d8273a04118a1926afc523be5"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/actual-output-excerpt.txt",
+        "bytes":  6580,
+        "sha256":  "f22beeb34d408a3c3a3de99264e086be442a832be97fa5ae66088bfab9c9212e"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/checks-final-short.txt",
+        "bytes":  6667,
+        "sha256":  "ec820920d9e7d81a6bb04ab6f1c2b4b5bd9619401093ac37c1764a1322ae5495"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/checks-preliminary-thirty.txt",
+        "bytes":  6769,
+        "sha256":  "b4e36b24a69782d9e0ba0dfb2a26a52c618b179200ceea31ffaaca4535ece58b"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/FREEBUFF_ACCEPTANCE_CHECKS.mjs",
+        "bytes":  9420,
+        "sha256":  "a46aa5b438bbfc87937f33be9d45aba41f1b97d9407b48b37a1bddbc57ac2535"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/FREEBUFF_FINAL_REVIEW.md",
+        "bytes":  5898,
+        "sha256":  "f98dce4c5b5bb623f25c7083d6e5f6cf2b931a2467c640fb1ff74885a3b471b4"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/FREEBUFF_MEASUREMENT_REVIEW.md",
+        "bytes":  5160,
+        "sha256":  "cd009b84522fb8f0d530260dcc850af74b9df9bb4cd0a4d1d1986203327fa7b2"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/FREEBUFF_RECHECK.md",
+        "bytes":  7005,
+        "sha256":  "45c29679ebde2419e226f30e01373ef12c0b9de8acda557eb63d7832833189ba"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/FREEBUFF_REVIEW_031.md",
+        "bytes":  27473,
+        "sha256":  "7412589684986dbb97f4f5903bd103262835d1bfbf9caed46d62b0f1a63ff2ea"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/FREEBUFF_TEST_PLAN_031.md",
+        "bytes":  14720,
+        "sha256":  "9025b8e944524d34a6b1622f5ea3310b30fb913f560f463c4ed67b69dac042fc"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/requests/BASELINE_REQUEST.md",
+        "bytes":  873,
+        "sha256":  "b70a04f37d8eaddba58d2346fe2fa8c786168b8d107a0db12f073a33b0d5c375"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/requests/FINAL_FENCE_REQUEST.md",
+        "bytes":  3618,
+        "sha256":  "1b05b84f949a604f2d8115a5b6bbfdeb01d195305dd4d6f0506e6abde446347b"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/requests/RECHECK_REQUEST.md",
+        "bytes":  3849,
+        "sha256":  "9f9887095f344ae80bd5297e28363888efec14d48df1944e45eacdb3056cfc3a"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/requests/REVIEW_REQUEST.md",
+        "bytes":  2327,
+        "sha256":  "ec72a3e62e3fae3b9c60c5a2eafdeca4fc7c5f93ff8458a7db69186bbddbe8e6"
+    },
+    {
+        "path":  "docs/reviews/Freebuff/version.txt",
+        "bytes":  8,
+        "sha256":  "bde96e063a6ff403019a636c728bfc85375c2c88b1a82f4e0e3aff6d94ac5b22"
+    },
+    {
+        "path":  "docs/reviews/INVOCATIONS.json",
+        "bytes":  91608,
+        "sha256":  "e93880ad5ba4568c1798864978325f1c8a1937bf77bf097e6c802f5e763a6d2a"
+    },
+    {
+        "path":  "docs/reviews/OpenCode/OPENCODE_031_FINAL_INDEPENDENT_REVIEW.md",
+        "bytes":  7097,
+        "sha256":  "4e930bed41c58cc4ffd865d844a73631c080ffd3d3d082c8a2502c08c42f5f0d"
+    },
+    {
+        "path":  "docs/reviews/OpenCode/OPENCODE_031_HISTORY_REVIEW.md",
+        "bytes":  8566,
+        "sha256":  "9e57cb57155e019714b4ef8111c6948d276ced8ffe187dc62084553a552bc925"
+    },
+    {
+        "path":  "docs/reviews/OpenCode/OPENCODE_031_PACKAGING_REVIEW.md",
+        "bytes":  6221,
+        "sha256":  "fc5f7c17ccbf97c03e0c6eebc3dcb4990320265bf5276b390dd3c5b3f887a67e"
+    },
+    {
+        "path":  "docs/reviews/OpenCode/OPENCODE_031_PERFORMANCE_REVIEW.md",
+        "bytes":  14292,
+        "sha256":  "0ec53ac2d3ecd553581221be1c19ce0d3e7611772603a2ade6b5e3b544c04073"
+    },
+    {
+        "path":  "docs/reviews/OpenCode/OPENCODE_031_PERSISTENCE_REVIEW.md",
+        "bytes":  5043,
+        "sha256":  "fc2de661d288069d697352b5fc63cc394629bbf56da16a0a67ec90808e7d0bb5"
+    },
+    {
+        "path":  "docs/reviews/OpenCode/OPENCODE_031_STABILITY_REVIEW.md",
+        "bytes":  5917,
+        "sha256":  "c0fc93d97235e4294ce1fbc60f0af2c80a3c46100077830a83215d29735da36b"
+    },
+    {
+        "path":  "docs/reviews/README.md",
+        "bytes":  3314,
+        "sha256":  "4ad7be78ae7295fda643a1554b0ed240f0d857ed5c02e04f08405392da1851d3"
+    },
+    {
+        "path":  "docs/reviews/results/backup-preserved.json",
+        "bytes":  168,
+        "sha256":  "5aa7026b75bc715a6004cae1004ce7b6aad2ca4a8bb873c6efa94f91912ac0cd"
+    },
+    {
+        "path":  "docs/reviews/results/final-agent-existing-lifetime-cpu.json",
+        "bytes":  532,
+        "sha256":  "c06941aacd3065ffbe640588ae7f711806e8f2873e72b7622544660963c1a434"
+    },
+    {
+        "path":  "docs/reviews/results/final-phone-instrumented.json",
+        "bytes":  6356,
+        "sha256":  "37454128cdbebd6d74e8b51a9a56bf3013f4cd20fc8a6729b7ac3153460bc925"
+    },
+    {
+        "path":  "docs/reviews/results/final-windows.json",
+        "bytes":  992,
+        "sha256":  "d3e8461a5699e3062f8ae388f462e579ff0c369eeca5ae3965df64a2b3208331"
+    },
+    {
+        "path":  "docs/reviews/results/installed-apk-verification.json",
+        "bytes":  309,
+        "sha256":  "e659827c31669466116a8db41d3ecea6652f498843b0f4205f0026ef731bf7e6"
+    },
+    {
+        "path":  "docs/reviews/results/portable-analyzer-check.json",
+        "bytes":  947,
+        "sha256":  "72741da6bddfcc9c2dbbf40be7212c1a01140ba0c083b37f1b8d0b6b8d1f9502"
+    },
+    {
+        "path":  "docs/reviews/results/preliminary-thirty.json",
+        "bytes":  6091,
+        "sha256":  "2f152c318d210fb4fcd3809b3dfef09825842067a99d88fbf477ffffc7b43611"
+    },
+    {
+        "path":  "docs/reviews/results/testing-scope.json",
+        "bytes":  620,
+        "sha256":  "a05050b5b07076b317fcbff201e3e8d3dbc371bfaa238c97fe6116d9b5235db4"
+    },
+    {
+        "path":  "docs/reviews/WHITELIST.txt",
+        "bytes":  1126,
+        "sha256":  "b540117d03b1bf38b3a6c61c83889ffc4591fd840dc07482ef57eb78bd6e8523"
+    },
+    {
+        "path":  "docs/SOURCES.md",
+        "bytes":  2724,
+        "sha256":  "60adf8e6d957e62b21bf4df0e77a52b1e58f3fd78fd1d2e476c7fec93dc48d04"
+    },
+    {
+        "path":  "docs/UPSTREAM_PHONEBOX.md",
+        "bytes":  13489,
+        "sha256":  "cd4ca2fb683dd24dac531c41494ad905c416fd571a60393042ca3c92df4585bb"
+    },
+    {
+        "path":  "docs/VALIDATION.md",
+        "bytes":  7754,
+        "sha256":  "df29c7f018855aa5d0c97ae5a15c203d8b536e6412c40f0a2debb8b14df83d9a"
+    },
+    {
+        "path":  "global.json",
+        "bytes":  109,
+        "sha256":  "5d9f7839d9ec35739ede461f8ab097a24129d3d454d3d04815ac10bf67d83b88"
+    },
+    {
+        "path":  "LICENSE",
+        "bytes":  1067,
+        "sha256":  "e3cfb97b744f8391177244cd991b126875adac85d13b76d526a5fd603fcb548b"
+    },
+    {
+        "path":  "licenses/32feet-MIT.txt",
+        "bytes":  1093,
+        "sha256":  "ea5641f40153196fe83230ee8a386a2b064acbc015d43ba77b4a3d321e7f2edb"
+    },
+    {
+        "path":  "licenses/ajv-LICENSE.txt",
+        "bytes":  1090,
+        "sha256":  "a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3"
+    },
+    {
+        "path":  "licenses/Android-Apache-2.0.txt",
+        "bytes":  11358,
+        "sha256":  "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+        "path":  "licenses/-bible-strong-avatar-core-LICENSE.txt",
+        "bytes":  1101,
+        "sha256":  "60971f83ef98a4205426c1d7b4049850721c93a0a0b03d8760f83199e3a331b3"
+    },
+    {
+        "path":  "licenses/-bible-strong-avatar-web-LICENSE.txt",
+        "bytes":  1101,
+        "sha256":  "60971f83ef98a4205426c1d7b4049850721c93a0a0b03d8760f83199e3a331b3"
+    },
+    {
+        "path":  "licenses/fast-deep-equal-LICENSE.txt",
+        "bytes":  1074,
+        "sha256":  "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+    },
+    {
+        "path":  "licenses/fast-uri-LICENSE.txt",
+        "bytes":  1813,
+        "sha256":  "b010b0dfdfdb23d7396e03b82cd4621fc9bb8f95d6b0aea70b9c24e12074c786"
+    },
+    {
+        "path":  "licenses/json-schema-traverse-LICENSE.txt",
+        "bytes":  1074,
+        "sha256":  "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+    },
+    {
+        "path":  "licenses/linux.bluetooth.nuspec",
+        "bytes":  1285,
+        "sha256":  "2c6c73994013acf8ee3c9257190cb0d3391efe440ac466437967040a7723525b"
+    },
+    {
+        "path":  "licenses/Linux.Bluetooth-Apache-2.0.txt",
+        "bytes":  11358,
+        "sha256":  "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+        "path":  "licenses/microsoft.aspnetcore.app.runtime.win-x64-LICENSE.txt",
+        "bytes":  1139,
+        "sha256":  "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+    },
+    {
+        "path":  "licenses/microsoft.netcore.app.runtime.win-x64-LICENSE.txt",
+        "bytes":  1139,
+        "sha256":  "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+    },
+    {
+        "path":  "licenses/Microsoft.Win32.SystemEvents-MIT.txt",
+        "bytes":  1139,
+        "sha256":  "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+    },
+    {
+        "path":  "licenses/microsoft.windowsdesktop.app.runtime.win-x64-LICENSE.txt",
+        "bytes":  1137,
+        "sha256":  "a89886665765362eb77e0f8e26602c924520041d1711b2eedc136434fe4d01ab"
+    },
+    {
+        "path":  "licenses/PhoneBox-MIT.txt",
+        "bytes":  1067,
+        "sha256":  "e3cfb97b744f8391177244cd991b126875adac85d13b76d526a5fd603fcb548b"
+    },
+    {
+        "path":  "licenses/QRCoder-MIT.txt",
+        "bytes":  1147,
+        "sha256":  "fde71b40fff47192a02738042cb39fa780635daa00827771bec65366ccd1e46d"
+    },
+    {
+        "path":  "licenses/require-from-string-LICENSE.txt",
+        "bytes":  1128,
+        "sha256":  "6ee0feb1f6ef996ff5a68600f8cf98909cf412d39ef3cdceaefd87d636fa1b7f"
+    },
+    {
+        "path":  "licenses/System.Drawing.Common-MIT.txt",
+        "bytes":  1139,
+        "sha256":  "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+    },
+    {
+        "path":  "licenses/tmds.dbus.nuspec",
+        "bytes":  1170,
+        "sha256":  "9e00044aa1105a99ec0337a3a9fe521a8126e73bbb2ca74e14a6a4d132a9d0ba"
+    },
+    {
+        "path":  "licenses/Tmds.DBus-MIT.txt",
+        "bytes":  1146,
+        "sha256":  "0d427020f59af0d8888bdee603c143da322c12bfa550d15c2b4d42948197d890"
+    },
+    {
+        "path":  "licenses/附加依赖说明.txt",
+        "bytes":  647,
+        "sha256":  "dcadf34fc9606a2a5d02028facd2a9206a45054ab2b23c3ad5768a405f8055f6"
+    },
+    {
+        "path":  "PRIVACY.md",
+        "bytes":  2375,
+        "sha256":  "57d70f21b41c52ac262c2be07b90655345fe2a71775c4f6b2e254950ff5346ab"
+    },
+    {
+        "path":  "README.md",
+        "bytes":  9558,
+        "sha256":  "7d3cefbb8f46c5ded3b46f5d3a2fc93acd5e72adb031f5cdc705c039df3ace2d"
+    },
+    {
+        "path":  "SECURITY.md",
+        "bytes":  3938,
+        "sha256":  "2c5fa90eba3316de697a03ee67ad57fa41b25172594a646e3aa2defa40b8ad60"
+    },
+    {
+        "path":  "THIRD_PARTY_NOTICES.md",
+        "bytes":  674,
+        "sha256":  "c6a106743f4a32faf90946f32a5bc9efd9146c6edf835141a8f5c2c1db27f2d3"
+    },
+    {
+        "path":  "tools/build-companion.ps1",
+        "bytes":  1952,
+        "sha256":  "b07aea1e0de45b63efd4dcb7943cb77ae10ea4ae3b174b693c11806256027b92"
+    },
+    {
+        "path":  "tools/build-max3.ps1",
+        "bytes":  195,
+        "sha256":  "5dc5b1e7b7ce6be3ff2a454a04e2670c02dc8e654b408c9d01c2f158a34cfcfe"
+    },
+    {
+        "path":  "tools/companion-ui/browser-test.mjs",
+        "bytes":  3754,
+        "sha256":  "318850daeb777496f751ea303c3b753b02039d6edc9cb6781aa4d71eb06260b8"
+    },
+    {
+        "path":  "tools/companion-ui/build.mjs",
+        "bytes":  2295,
+        "sha256":  "280973c055b2a090a9a42483dd5f3e1080795d1fa7abc5ae7bc29b75fbd53a0c"
+    },
+    {
+        "path":  "tools/companion-ui/generated/validators.mjs",
+        "bytes":  208863,
+        "sha256":  "cc44ebb9eecef5308d822ef07cc188d7eaf0985f1753e9bf3d32bdda59115f57"
+    },
+    {
+        "path":  "tools/companion-ui/package.json",
+        "bytes":  439,
+        "sha256":  "a8cf771d2d39198ba2bd0a2b58bd2384836d5bd62e39c0e417a73f17a41e0c10"
+    },
+    {
+        "path":  "tools/companion-ui/package-lock.json",
+        "bytes":  19845,
+        "sha256":  "37abf4dd6daacc74fde14b29d2b8cd00daca46f1b8f97cce240ac6b9ebeb2f53"
+    },
+    {
+        "path":  "tools/companion-ui/src/index.html",
+        "bytes":  2502,
+        "sha256":  "4b8ec5833794af7346d6e4933b22075ce2c59ce4de7fd96178fdda994eb5f92f"
+    },
+    {
+        "path":  "tools/companion-ui/src/main.js",
+        "bytes":  10651,
+        "sha256":  "8a27de87d0acc7d104dd508df75a2bec900632db1959383e17f65a33799fda4d"
+    },
+    {
+        "path":  "tools/companion-ui/src/model.js",
+        "bytes":  1716,
+        "sha256":  "33c7bef84f6111dc4af9e3c29c13d184658023de321b710634de346287be4bb2"
+    },
+    {
+        "path":  "tools/companion-ui/src/style.css",
+        "bytes":  4391,
+        "sha256":  "98d183f7c0311db37d0ce0405e6004912328e8e06d82a41caf15b7df635390c9"
+    },
+    {
+        "path":  "tools/companion-ui/src/trend.js",
+        "bytes":  1529,
+        "sha256":  "69b67788eba16693d0297541183d6009549feccd45122f948d83a513a2338b64"
+    },
+    {
+        "path":  "tools/companion-ui/src/validator-adapter.js",
+        "bytes":  490,
+        "sha256":  "8acf8ac8b887d5404b6700f2c401f14f8fd6d6ba7ea0935758478b50405f910c"
+    },
+    {
+        "path":  "tools/companion-ui/test.mjs",
+        "bytes":  3153,
+        "sha256":  "542c7ddb699c4785436cf13ebfab61233d8383e5b74c24595a9db3628156e093"
+    },
+    {
+        "path":  "tools/Enable-Startup.ps1",
+        "bytes":  687,
+        "sha256":  "59fb85f043400539612a3a9e7c82aa1710e736d3941600bc2bfb9035dc89f057"
+    },
+    {
+        "path":  "tools/Measure-CompanionStability.ps1",
+        "bytes":  20751,
+        "sha256":  "bbc7392bc0a1a4c19432f68f434adb77fedb0af0b9d24c675e585310f403dcfd"
+    },
+    {
+        "path":  "tools/Open-Companion.ps1",
+        "bytes":  641,
+        "sha256":  "98f1ed408aae3796a1fbf422652f06ce7a0748d55ccc3b0a57a5adaff1c2e866"
+    },
+    {
+        "path":  "tools/package-public.ps1",
+        "bytes":  9051,
+        "sha256":  "7cf7de839ac325fed7467a241f579e6164ec7f6f3cde07abcb51904c885ed6b7"
+    },
+    {
+        "path":  "tools/performance/analyze-trace.mjs",
+        "bytes":  17386,
+        "sha256":  "05247655db6cbf6616c277104c9cd44816c130e97d1213532fc72eba9df554ca"
+    },
+    {
+        "path":  "tools/performance/capture-fps-30min.pbtxt",
+        "bytes":  738,
+        "sha256":  "41374b1568e150e51feef5b1831b845fc6ed907cba1612b4a749130a1eb6420b"
+    },
+    {
+        "path":  "tools/performance/capture-fps-70s.pbtxt",
+        "bytes":  709,
+        "sha256":  "73e13f126c7b323a28dd60ee6a90aaf81770cc929ef184245550fc57c0df7ef1"
+    },
+    {
+        "path":  "tools/performance/observe-cpu.ps1",
+        "bytes":  3063,
+        "sha256":  "42d14ca6bd461d26a1cf769ba99bbf8b9cf4298a05a418a69425b6401fb4134d"
+    },
+    {
+        "path":  "tools/performance/observe-windows.mjs",
+        "bytes":  5431,
+        "sha256":  "a0ed4ec37e9a7a4ec7cafc8e03e9c912a5a956491a4a85f0ea58ce480945e7ad"
+    },
+    {
+        "path":  "tools/performance/README.md",
+        "bytes":  3595,
+        "sha256":  "e4645e8682b0baa2514832fe737147b4aec00331aa219d3974d25531c3946075"
+    },
+    {
+        "path":  "tools/Start-Companion.ps1",
+        "bytes":  1848,
+        "sha256":  "a32806c4408756c01b97e7cf07974fec081f9e3ac184351b362712e404bb1e93"
+    },
+    {
+        "path":  "tools/Stop-Companion.ps1",
+        "bytes":  446,
+        "sha256":  "69750a77d8477c1487b8f2aec9784945848cfacc2ed31e9225c91f7ee09700c1"
+    },
+    {
+        "path":  "tools/test-freshness.ps1",
+        "bytes":  1136,
+        "sha256":  "fec67cb056969b35be0203a1d452202b4ed9f9170ef4f2d9c0cb2404935b58f7"
+    },
+    {
+        "path":  "tools/Test-Stability.ps1",
+        "bytes":  3424,
+        "sha256":  "6d2816206db0b523b6f82b30e7194dc4eeca2a6d6cb5e8691a5b327f9a51ec22"
+    }
+]

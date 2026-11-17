@@ -1,0 +1,225 @@
+{
+  "scope": "Real non-debuggable release APK, native Windows samples, app + SurfaceFlinger FrameTimeline joined by display token. Visual-ready callbacks alone are not physical presentation.",
+  "displayRefreshHz": 60.000004,
+  "captureDurationMs": 70057,
+  "methods": {
+    "onePercentLow": "1000 divided by mean of slowest 1% positive inter-present intervals (ms)",
+    "missedRefresh": "missed 60 Hz opportunities / (observed intervals + missed opportunities); separate from FrameTimeline dropped buffers",
+    "physicalUpdate": "first app frame beginning after each WebView visual-ready marker, joined to actual SurfaceFlinger display token; multiple updates in same display frame count once",
+    "age": "Windows native network sample to conservative displayed frame, calibrated clock estimate; upper includes measured clock uncertainty",
+    "markerClockOffsetNs": 121145
+  },
+  "pipeline": {
+    "receiveStates": 687,
+    "uniqueReceiveStates": 687,
+    "receiveHz": 9.820156085989062,
+    "domUpdates": 688,
+    "domHz": 9.822316419142185,
+    "visualReady": 688,
+    "physicalNetworkUpdates": 667,
+    "physicalNetworkHz": 9.531573964951827,
+    "unmatchedVisualMarkers": 0,
+    "uncalibratedReceiveStates": 0,
+    "routes": [
+      "bluetooth"
+    ],
+    "receiveAgeMs": {
+      "n": 687,
+      "mean": 87.00800582241631,
+      "p50": 73.5,
+      "p95": 213,
+      "p99": 326,
+      "min": 15.5,
+      "max": 475
+    },
+    "domAgeMs": {
+      "n": 688,
+      "mean": 93.19476744186046,
+      "p50": 80,
+      "p95": 216,
+      "p99": 329,
+      "min": 24.5,
+      "max": 478
+    },
+    "physicalAgeMs": {
+      "n": 667,
+      "mean": 154.86476614842587,
+      "p50": 143.32656400000002,
+      "p95": 274.690625,
+      "p99": 392.009584,
+      "min": 77.310157,
+      "max": 539.969219
+    },
+    "physicalAgeUpperMs": {
+      "n": 667,
+      "mean": 161.8917526551725,
+      "p50": 151.45432399999999,
+      "p95": 279.690625,
+      "p99": 397.009584,
+      "min": 82.949376,
+      "max": 544.969219
+    },
+    "clockUncertaintyMs": {
+      "n": 687,
+      "mean": 7.248180494905386,
+      "p50": 5,
+      "p95": 6.5,
+      "p99": 96,
+      "min": 5,
+      "max": 96
+    },
+    "lastFiveMinutesPhysicalAgeMs": {
+      "n": 667,
+      "mean": 154.86476614842587,
+      "p50": 143.32656400000002,
+      "p95": 274.690625,
+      "p99": 392.009584,
+      "min": 77.310157,
+      "max": 539.969219
+    },
+    "lastFiveMinutesPhysicalAgeUpperMs": {
+      "n": 667,
+      "mean": 161.8917526551725,
+      "p50": 151.45432399999999,
+      "p95": 279.690625,
+      "p99": 397.009584,
+      "min": 82.949376,
+      "max": 544.969219
+    },
+    "perField": {
+      "cpu": {
+        "measured": true,
+        "uniqueValidSamples": 277,
+        "newSampleDisplayHz": 3.956623024837309,
+        "firstDisplayAgeMs": {
+          "n": 277,
+          "mean": 195.43401857231498,
+          "p50": 185.00341796875,
+          "p95": 328.2109375,
+          "p99": 448.768798828125,
+          "min": 98.941650390625,
+          "max": 523.023193359375
+        },
+        "firstDisplayAgeUpperMs": {
+          "n": 277,
+          "mean": 202.60188860841606,
+          "p50": 191.4736328125,
+          "p95": 334.416259765625,
+          "p99": 453.768798828125,
+          "min": 103.941650390625,
+          "max": 528.023193359375
+        }
+      },
+      "memory": {
+        "measured": true,
+        "uniqueValidSamples": 140,
+        "newSampleDisplayHz": 1.9979032220136161,
+        "firstDisplayAgeMs": {
+          "n": 140,
+          "mean": 207.06620396205358,
+          "p50": 196.1640625,
+          "p95": 329.2109375,
+          "p99": 445.5615234375,
+          "min": 101.90087890625,
+          "max": 449.768798828125
+        },
+        "firstDisplayAgeUpperMs": {
+          "n": 140,
+          "mean": 213.89120396205357,
+          "p50": 204.43408203125,
+          "p95": 334.2109375,
+          "p99": 450.5615234375,
+          "min": 106.90087890625,
+          "max": 454.768798828125
+        }
+      }
+    }
+  },
+  "fps": {
+    "uniquePresentedFrames": 4329,
+    "averageFps": 59.29512536685695,
+    "onePercentLowFps": 29.93575290085763,
+    "missedRefreshPercent": 1.1420740063956145,
+    "intervalMs": {
+      "n": 4328,
+      "mean": 16.86479274329944,
+      "p50": 16.672917,
+      "p95": 16.901511,
+      "p99": 33.248073,
+      "min": 16.215938,
+      "max": 33.673333
+    },
+    "droppedBufferPercent": 0,
+    "jankPercent": 51.767151767151766,
+    "firstFiveMinutes": {
+      "uniquePresentedFrames": 4329,
+      "averageFps": 59.29512536685695,
+      "onePercentLowFps": 29.93575290085763,
+      "missedRefreshPercent": 1.1420740063956145,
+      "intervalMs": {
+        "n": 4328,
+        "mean": 16.86479274329944,
+        "p50": 16.672917,
+        "p95": 16.901511,
+        "p99": 33.248073,
+        "min": 16.215938,
+        "max": 33.673333
+      }
+    },
+    "lastFiveMinutes": {
+      "uniquePresentedFrames": 4329,
+      "averageFps": 59.29512536685695,
+      "onePercentLowFps": 29.93575290085763,
+      "missedRefreshPercent": 1.1420740063956145,
+      "intervalMs": {
+        "n": 4328,
+        "mean": 16.86479274329944,
+        "p50": 16.672917,
+        "p95": 16.901511,
+        "p99": 33.248073,
+        "min": 16.215938,
+        "max": 33.673333
+      }
+    },
+    "frameMetricsCallbacks": 4151,
+    "frameMetricsCallbackDrops": 0
+  },
+  "thermal": {
+    "sensor": "Android ACTION_BATTERY_CHANGED battery temperature; not SoC temperature",
+    "batteryCelsius": {
+      "n": 14,
+      "mean": 35,
+      "p50": 35,
+      "p95": 35,
+      "p99": 35,
+      "min": 35,
+      "max": 35
+    },
+    "first": {
+      "bootMs": "69574245",
+      "batteryCelsius": "35.0",
+      "batteryLevel": "80",
+      "plugged": "2"
+    },
+    "last": {
+      "bootMs": "69639450",
+      "batteryCelsius": "35.0",
+      "batteryLevel": "80",
+      "plugged": "2"
+    }
+  },
+  "traceHealth": [],
+  "windows": {
+    "observationMs": 74882,
+    "nativeNetworkHz": 9.887628438957256,
+    "nativeCpuHz": 3.9728565905424684,
+    "nativeMemoryHz": 1.9997600287965445,
+    "actualSentHz": 9.842151651932374,
+    "sendCounterSource": "process-lifetime successful encrypted state writes",
+    "sentCounterReset": false,
+    "connectionsDuringWindow": 0,
+    "disconnectedChecks": 0,
+    "meanWireBytesPerState": 563.751696065129,
+    "peakOutstanding": 3
+  }
+}

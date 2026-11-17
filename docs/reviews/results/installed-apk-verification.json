@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-17T15:38:03.1977246+08:00",
+  "installedApkMatchesDelivery": true,
+  "apkSha256": "B39AA4F68F64919EE08694A210F326F4C0E104B484A11524D972B9C735AEFA77",
+  "version": [
+    "versionCode=35 minSdk=28 targetSdk=35",
+    "versionName=0.3.1"
+  ],
+  "adbReverseMappings": [
+    ""
+  ]
+}

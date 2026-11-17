@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'">
+<title>Desk Companion</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<section class="face"><header><span class="brand">DESK<span> · </span>COMPANION</span><nav><button id="bluetooth">蓝牙</button><button id="pair" aria-label="Wi-Fi 配对">配对</button></nav></header>
+<div id="avatar" aria-label="机器人，轻触互动"></div><div class="face-label"><span id="ai">状态未知</span><small id="source">等待本地任务事件</small></div>
+<div class="connection"><i id="dot"></i><span id="connection">离线 · 本地待机</span><small id="fps">— FPS</small></div></section>
+<button class="monitor" id="details"><div class="numbers"><div><small>CPU</small><strong id="cpu">—</strong><span>%</span></div><div class="ram"><strong id="memory">RAM —</strong></div></div>
+<div class="live-trend"><div class="trend-key"><span><i class="cpu-key"></i>CPU　<i class="memory-key"></i>内存</span><span>最近 60 秒 · 0–100%</span></div><canvas id="livechart" width="600" height="100" role="img" aria-label="CPU 和内存最近60秒变化，断线处留空"></canvas></div>
+<div class="network"><span>以太网</span><strong id="ethernet">未连接</strong></div><div class="network"><span>Wi-Fi</span><strong id="wifi">未连接</strong></div>
+<footer><span id="freshness">电脑数据离线</span><span>详情 ↗</span></footer></button>
+</main><dialog id="history"><div class="dialog-top"><h2>电脑与历史</h2><button id="close">返回</button></div>
+<p id="diagnostics"></p><p id="timing"></p><p id="disk">磁盘：未知</p><p id="signal">Wi-Fi 信号：未知</p><div id="interfaces"></div>
+<h3>CPU / 内存 · 最近 10 分钟</h3><canvas id="chart" width="600" height="180"></canvas><small class="legend">● CPU　● 内存 · 空白处为无有效数据</small>
+<h3>分钟趋势 · 最近 24 小时</h3><canvas id="longchart" width="600" height="150"></canvas><small class="legend">少于 50 条采样的分钟、断线期间不连线</small>
+<h3>本地事件</h3><div id="events"></div><button id="refresh">刷新历史</button><button id="forget">忘记电脑</button></dialog>
+<script src="app.js"></script></body></html>

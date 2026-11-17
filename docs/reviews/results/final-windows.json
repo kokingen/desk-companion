@@ -1,0 +1,21 @@
+{
+  "scope": "Exact delivered Windows EXE, actual native samples and successful encrypted Bluetooth STATE writes. Phone measurements are in the separately retrieved capture.",
+  "exeSha256": "768CF093CB34BCB395B902ABF22E153F3DBA30447E548D916A4C39E5DA137508",
+  "apkSha256": "B39AA4F68F64919EE08694A210F326F4C0E104B484A11524D972B9C735AEFA77",
+  "observationMs": 74882,
+  "checks": 703,
+  "nativeNetworkHz": 9.887628438957256,
+  "nativeCpuHz": 3.9728565905424684,
+  "nativeMemoryHz": 1.9997600287965445,
+  "actualSentStates": 737,
+  "actualSentHz": 9.842151651932374,
+  "meanWireBytesPerState": 563.751696065129,
+  "sendCounterSource": "process-lifetime successful encrypted STATE writes",
+  "connectionsDuringWindow": 0,
+  "disconnectedChecks": 0,
+  "peakOutstanding": 3,
+  "androidFinalLatencyCapture": {
+    "status": "RETRIEVED_AND_ANALYZED",
+    "reason": "USB reconnected by user. Already-completed phone CSV and Perfetto trace pulled and analyzed; no additional long test started."
+  }
+}

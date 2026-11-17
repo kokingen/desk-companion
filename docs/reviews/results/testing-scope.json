@@ -1,0 +1,13 @@
+{
+  "recordedAt": "2026-11-17T07:34:44.348Z",
+  "userInstruction": "24 小时测试不用做，现在就可以停了，现在的数据已经够多了",
+  "longRun24Hours": "CANCELLED_BY_USER",
+  "final24HourRunStarted": false,
+  "additionalLongHardwareTests": "STOPPED_BY_USER",
+  "windowsOperatingSystemRestart": "NOT_TESTED",
+  "windowsOperatingSystemSleepWake": "NOT_TESTED",
+  "finalCandidate30MinuteFps": "NOT_TESTED",
+  "preliminary30MinuteFps": "COMPLETED_ON_EARLIER_CANDIDATE",
+  "agentProcessRestart": "TESTED_NOT_OS_RESTART",
+  "note": "No 24-hour acceptance claimed. No further reboot or suspend performed."
+}

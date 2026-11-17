@@ -1,0 +1,46 @@
+{
+  "scope": "Portable public analyzer executed against the same already-recorded real final capture, no new hardware test",
+  "checks": [
+    {
+      "key": "pipeline.receiveHz",
+      "matched": true
+    },
+    {
+      "key": "pipeline.domHz",
+      "matched": true
+    },
+    {
+      "key": "pipeline.physicalNetworkHz",
+      "matched": true
+    },
+    {
+      "key": "pipeline.physicalAgeUpperMs.p95",
+      "matched": true
+    },
+    {
+      "key": "pipeline.perField.cpu.firstDisplayAgeUpperMs.p95",
+      "matched": true
+    },
+    {
+      "key": "pipeline.perField.memory.firstDisplayAgeUpperMs.p95",
+      "matched": true
+    },
+    {
+      "key": "fps.averageFps",
+      "matched": true
+    },
+    {
+      "key": "fps.onePercentLowFps",
+      "matched": true
+    },
+    {
+      "key": "fps.missedRefreshPercent",
+      "matched": true
+    },
+    {
+      "key": "windows.actualSentHz",
+      "matched": true
+    }
+  ],
+  "passed": true
+}

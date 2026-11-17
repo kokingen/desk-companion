@@ -1,0 +1,169 @@
+FREEBUFF acceptance checks — work/logs/final031-latency1/analysis.json
+
+PASS       analysis.scope                Real non-debuggable release APK, native Windows samples, app + SurfaceFlinger FrameTimeline joined by display token. Visual-ready callbacks alone are not physical presentation.
+NOT_TESTED duration.30min                74.9 s observed (1800 s required); does not meet the 30-minute minimum
+PASS       pipeline.receiveUniqueness    687 unique of 687 receive rows (0 duplicate session:sequence keys); all rows distinct
+PASS       pipeline.domCoverage          visualReady 688, domUpdates 688, difference 0
+PASS       trace.unmatchedVisualMarkers  0 visual marker(s) without a matched presented frame
+PASS       trace.traceHealth             no error/data_loss/drop stats
+PASS       window.peakOutstanding        actual 3.000 <= 3
+FAIL       rate.receive                  actual 9.820 Hz, target 10 Hz, deviation -0.180 Hz (-1.80%)
+FAIL       rate.physicalNetwork          actual 9.532 Hz, target 10 Hz, deviation -0.468 Hz (-4.68%)
+FAIL       rate.nativeNetwork            actual 9.888 Hz, target 10 Hz, deviation -0.112 Hz (-1.12%)
+FAIL       rate.actualSent               actual 9.842 Hz, target 10 Hz, deviation -0.158 Hz (-1.58%)
+FAIL       rate.nativeCpu                actual 3.973 Hz, target 4 Hz, deviation -0.027 Hz (-0.68%)
+FAIL       rate.nativeMemory             actual 2.000 Hz, target 2 Hz, deviation -0.000 Hz (-0.01%)
+PASS       latency.p95.point             actual 274.691 ms <= 300 ms
+PASS       latency.p99.point             actual 392.010 ms <= 500 ms
+PASS       latency.p95.uncertaintyUpper  actual 279.691 ms <= 300 ms
+PASS       latency.p99.uncertaintyUpper  actual 397.010 ms <= 500 ms
+PASS       latency.samples               667 presented physical-age samples
+FAIL       fps.averageVsRefresh          mean 59.295 fps vs 60.000 Hz (reported panel rate), deviation -0.705 fps
+REVIEW     fps.missedRefresh             1.142% of 60 Hz opportunities missed (informational; no target specified)
+REVIEW     fps.droppedBuffers            0.000% dropped buffers (informational)
+REVIEW     fps.onePercentLow             29.936 fps 1% low (informational; no target specified)
+REVIEW     fps.jank                      51.767% jank by FrameTimeline jank_type (not equal to deadline misses)
+REVIEW     link.disconnectedChecks       0 sampled check(s) with no Bluetooth connection; no send counter reset observed
+NOT_TESTED duration.24h                  no stability summary supplied; 24 h cannot be inferred from this analysis
+
+summary: PASS=11 FAIL=7 REVIEW=5 NOT_TESTED=2
+note: PASS/FAIL are exact comparisons to the stated targets; REVIEW means "not a pass, needs human reading".
+
+JSON:
+{
+  "analysisPath": "work/logs/final031-latency1/analysis.json",
+  "stabilityPath": null,
+  "counts": {
+    "PASS": 11,
+    "FAIL": 7,
+    "REVIEW": 5,
+    "NOT_TESTED": 2
+  },
+  "results": [
+    {
+      "name": "analysis.scope",
+      "status": "PASS",
+      "detail": "Real non-debuggable release APK, native Windows samples, app + SurfaceFlinger FrameTimeline joined by display token. Visual-ready callbacks alone are not physical presentation."
+    },
+    {
+      "name": "duration.30min",
+      "status": "NOT_TESTED",
+      "detail": "74.9 s observed (1800 s required); does not meet the 30-minute minimum"
+    },
+    {
+      "name": "pipeline.receiveUniqueness",
+      "status": "PASS",
+      "detail": "687 unique of 687 receive rows (0 duplicate session:sequence keys); all rows distinct"
+    },
+    {
+      "name": "pipeline.domCoverage",
+      "status": "PASS",
+      "detail": "visualReady 688, domUpdates 688, difference 0"
+    },
+    {
+      "name": "trace.unmatchedVisualMarkers",
+      "status": "PASS",
+      "detail": "0 visual marker(s) without a matched presented frame"
+    },
+    {
+      "name": "trace.traceHealth",
+      "status": "PASS",
+      "detail": "no error/data_loss/drop stats"
+    },
+    {
+      "name": "window.peakOutstanding",
+      "status": "PASS",
+      "detail": "actual 3.000 <= 3"
+    },
+    {
+      "name": "rate.receive",
+      "status": "FAIL",
+      "detail": "actual 9.820 Hz, target 10 Hz, deviation -0.180 Hz (-1.80%)"
+    },
+    {
+      "name": "rate.physicalNetwork",
+      "status": "FAIL",
+      "detail": "actual 9.532 Hz, target 10 Hz, deviation -0.468 Hz (-4.68%)"
+    },
+    {
+      "name": "rate.nativeNetwork",
+      "status": "FAIL",
+      "detail": "actual 9.888 Hz, target 10 Hz, deviation -0.112 Hz (-1.12%)"
+    },
+    {
+      "name": "rate.actualSent",
+      "status": "FAIL",
+      "detail": "actual 9.842 Hz, target 10 Hz, deviation -0.158 Hz (-1.58%)"
+    },
+    {
+      "name": "rate.nativeCpu",
+      "status": "FAIL",
+      "detail": "actual 3.973 Hz, target 4 Hz, deviation -0.027 Hz (-0.68%)"
+    },
+    {
+      "name": "rate.nativeMemory",
+      "status": "FAIL",
+      "detail": "actual 2.000 Hz, target 2 Hz, deviation -0.000 Hz (-0.01%)"
+    },
+    {
+      "name": "latency.p95.point",
+      "status": "PASS",
+      "detail": "actual 274.691 ms <= 300 ms"
+    },
+    {
+      "name": "latency.p99.point",
+      "status": "PASS",
+      "detail": "actual 392.010 ms <= 500 ms"
+    },
+    {
+      "name": "latency.p95.uncertaintyUpper",
+      "status": "PASS",
+      "detail": "actual 279.691 ms <= 300 ms"
+    },
+    {
+      "name": "latency.p99.uncertaintyUpper",
+      "status": "PASS",
+      "detail": "actual 397.010 ms <= 500 ms"
+    },
+    {
+      "name": "latency.samples",
+      "status": "PASS",
+      "detail": "667 presented physical-age samples"
+    },
+    {
+      "name": "fps.averageVsRefresh",
+      "status": "FAIL",
+      "detail": "mean 59.295 fps vs 60.000 Hz (reported panel rate), deviation -0.705 fps"
+    },
+    {
+      "name": "fps.missedRefresh",
+      "status": "REVIEW",
+      "detail": "1.142% of 60 Hz opportunities missed (informational; no target specified)"
+    },
+    {
+      "name": "fps.droppedBuffers",
+      "status": "REVIEW",
+      "detail": "0.000% dropped buffers (informational)"
+    },
+    {
+      "name": "fps.onePercentLow",
+      "status": "REVIEW",
+      "detail": "29.936 fps 1% low (informational; no target specified)"
+    },
+    {
+      "name": "fps.jank",
+      "status": "REVIEW",
+      "detail": "51.767% jank by FrameTimeline jank_type (not equal to deadline misses)"
+    },
+    {
+      "name": "link.disconnectedChecks",
+      "status": "REVIEW",
+      "detail": "0 sampled check(s) with no Bluetooth connection; no send counter reset observed"
+    },
+    {
+      "name": "duration.24h",
+      "status": "NOT_TESTED",
+      "detail": "no stability summary supplied; 24 h cannot be inferred from this analysis"
+    }
+  ]
+}

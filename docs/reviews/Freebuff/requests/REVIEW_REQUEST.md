@@ -1,0 +1,11 @@
+# Independent review request — actual 0.3.1 candidate
+
+You are the installed local Freebuff sub-agent. Read this curated current candidate snapshot, actual short-device measurement JSON, and its analyzer. Independently audit correctness, security, performance and test validity. Do not change implementation, read outside this folder, install tools, or access credentials. Write FREEBUFF_FINAL_REVIEW.md and FREEBUFF_MEASUREMENT_REVIEW.md. Focus on actionable confirmed P1/P2 issues; distinguish hypotheses and missing acceptance evidence.
+
+Requirements: native CPU 250 ms / GlobalMemoryStatusEx RAM 500 ms / network 100 ms; genuine send, receive and display updates 10 Hz, latest priority, bounded queues. Network age P95 <=300 / P99 <=500 ms. RAM used GiB + percent from same native sample. Preserve v1 pairing/history/security and authenticate negotiated v2. Real release APK, physical MI MAX 3. Analyze actual FrameTimeline/FrameMetrics FPS, 1% low, drops, thermal and latency; do not mistake rAF or WebView visual-ready for physical presentation.
+
+Facts: 0.3.0 backup retained. Genuine short test in REAL_SHORT_TEST.json is on the pre-last-UI-optimization APK; the supplied main.js now avoids a redundant full metric/robot update on the periodic expiry tick. A new 30-minute capture and >=24h run are not yet complete. Do not claim you ran tests you did not run. The phone really is connected, but your prior shell tool could not run because Git Bash is unavailable. You can review measured data without claiming execution.
+
+Current v2 has authenticated 3-frame window, cumulative ACK every40ms, connection-local positional telemetry retaining all NICs, omitting unchanged CPU/RAM/disk/WLAN/task records, rates rounded to0.01B/s and NIC intervals to0.01ms; native byte counters and sample times remain exact. v1 unchanged. Initial8-frame trial failed in real tests due buffer age and was rejected.
+
+Please validate wire encoder/decoder layouts, connection-local caches, state coalescing, generation ownership, cursor/history behavior, listener/queue teardown, diagnostics permission, measurement joins, and the honest interpretation of near10Hz rates / borderline P95 / FPS results. Provide specific file and code evidence, not generic checklists. No fabricated dynamic tests. Your review files must be authored by you.

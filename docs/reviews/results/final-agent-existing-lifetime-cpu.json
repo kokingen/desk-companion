@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-17T15:40:08.6927384+08:00",
+  "exeSha256": "768CF093CB34BCB395B902ABF22E153F3DBA30447E548D916A4C39E5DA137508",
+  "elapsedSeconds": 6188.6848898,
+  "cpuSeconds": 154.875,
+  "logicalProcessors": 8,
+  "averageCpuPercent": 0.312818883894178,
+  "workingSetBytes": 114065408,
+  "privateBytes": 83316736,
+  "method": "Single read of actual running final Agent lifetime CPU / wall time since process start / logical processors. Existing normal-use lifetime, not a controlled stability or physical-FPS test."
+}

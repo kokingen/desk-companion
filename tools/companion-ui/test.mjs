@@ -1,0 +1,15 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {fresh,nicText,speed,aiState,ram} from './src/model.js';
+import {createTrend} from './src/trend.js';
+test('freshness includes known sample age and monotonic age since receipt',()=>{assert.equal(fresh(300,600,true),true);assert.equal(fresh(300,800,true),false);assert.equal(fresh(null,0,true),false);assert.equal(fresh(0,0,false),false);});
+test('disconnected wifi never appears as healthy zero speed',()=>{assert.equal(nicText([{kind:'wifi',physical:true,connected:false}],'wifi',true),'未连接');});
+test('native read failure is distinct from disconnection',()=>{assert.equal(nicText([{kind:'wifi',physical:true,connected:false,reason:'native_error_2'}],'wifi',true),'读取失败');});
+test('virtual ethernet and VPN never contribute to physical network display',()=>{assert.equal(nicText([{kind:'ethernet',physical:false,connected:true,smoothDownBps:1000}],'ethernet',true),'无此网卡');});
+test('units are decimal MB/s',()=>{assert.equal(speed(1000000),'1.00 MB/s');assert.equal(speed(null),'—');});
+test('RAM presents used physical GiB and percent from one sample only',()=>{assert.equal(ram({valid:true,usedBytes:5.2*1073741824,percent:67,totalBytes:99*1073741824}),'RAM 5.2 GiB · 67%');assert.equal(ram({valid:false,usedBytes:0,percent:0}),'RAM —');assert.equal(ram({valid:true,percent:67}),'RAM —');});
+test('offline robot has local idle and unknown AI work',()=>{assert.equal(aiState({state:'coding'},false).label,'状态未知');assert.equal(aiState({state:'coding',source:'log_inferred'},true).source,'Codex · 日志推断');});
+const sample=(sequence,t,value=40)=>({agentSessionId:'a',serverSentAtUnixMs:t,metrics:{cpu:{valid:true,percent:value,sequence,sampledAtUnixMs:t},memory:{valid:true,percent:60,sequence:1,sampledAtUnixMs:10000}}});
+test('live trend deduplicates CPU and memory by their own sample identity',()=>{const t=createTrend();t.push(sample(1,10000),0);t.push(sample(2,10250),250);t.push(sample(2,10250),300);assert.equal(t.series.cpu.length,2);assert.equal(t.series.memory.length,1);});
+test('live trend leaves gaps at disconnect, agent restart, and missing intervals',()=>{const t=createTrend();t.push(sample(1,10000),0);t.break();t.push(sample(2,10250),250);t.push({...sample(3,10500),agentSessionId:'b'},500);t.push({...sample(4,12500),agentSessionId:'b'},2500);assert.equal(t.segments('cpu',2500).length,4);});
+test('invalid CPU observation breaks its line even before the missing interval threshold',()=>{const t=createTrend();t.push(sample(1,10000),0);const bad=sample(2,10250);bad.metrics.cpu.valid=false;t.push(bad,250);t.push(sample(3,10500),500);assert.equal(t.segments('cpu',500).length,2);assert.equal(t.segments('memory',500).length,1);});
+test('live trend rejects invalid/stale values and bounds the rolling window',()=>{const t=createTrend();t.push(sample(1,10000,101),0);t.push({...sample(2,11000),serverSentAtUnixMs:14000},1000);assert.equal(t.series.cpu.length,0);for(let i=0;i<1000;i++)t.push(sample(i,20000+i*100),i*100);assert.ok(t.series.cpu.length<=600);assert.ok(t.series.cpu.every(r=>r.t>=99900-60000));});

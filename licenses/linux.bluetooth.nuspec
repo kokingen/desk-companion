@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Linux.Bluetooth</id>
+    <version>5.67.1</version>
+    <title>Linux.Bluetooth - Linux Bluetooth LE library</title>
+    <authors>Xeno Innovations</authors>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>Linux.Bluetooth-128x128.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/SuessLabs/Linux.Bluetooth</projectUrl>
+    <description>Linux Bluetooth LE library for .NET using BlueZ D-Bus.</description>
+    <releaseNotes>Upgraded DBus support.</releaseNotes>
+    <copyright>Copyright 2024 Xeno Innovations, Inc.</copyright>
+    <tags>Linux Bluetooth BlueZ dotnet net dbus tmds-dbus net-core netstandard BluetoothLowEnergy BLE BluetoothLE SuessLabs Suess Xeno Innovations</tags>
+    <repository type="git" url="https://github.com/SuessLabs/Linux.Bluetooth" commit="ea701ec825a232df7beffe6e6c8caa327a7bb5d8" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Tmds.DBus" version="0.20.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
