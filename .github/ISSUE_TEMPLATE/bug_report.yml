@@ -1,0 +1,83 @@
+name: Bug report
+description: Report a reproducible problem with Desk Companion.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting, check the [installation guide](https://github.com/kokingen/desk-companion/blob/main/docs/031-DELIVERY.md) and [known limitations](https://github.com/kokingen/desk-companion#known-limitations).
+
+        **Privacy warning:** never attach the Windows private-data directory, Android database, raw logs, pairing links/codes, tokens, private keys, serial numbers, Bluetooth MAC addresses, Codex prompts/messages or personal task identifiers. Share only short, redacted excerpts.
+  - type: input
+    id: version
+    attributes:
+      label: Desk Companion version
+      description: Include the exact version/build if known.
+      placeholder: 0.3.1 Preview
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected component
+      options:
+        - Windows Agent
+        - Android app
+        - Bluetooth connection
+        - Private Wi-Fi fallback
+        - Pairing / security
+        - Codex task status
+        - Documentation / installation
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Windows version, Android version and device model. Do not include serial numbers or personal identifiers.
+      placeholder: Windows 11 x64; Android 13; device model
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest repeatable sequence.
+      placeholder: |
+        1. Start the Windows Agent...
+        2. Pair the Android device...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: Reproducibility
+      options:
+        - Every time
+        - Intermittent
+        - Happened once
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: redacted_logs
+    attributes:
+      label: Redacted diagnostic excerpt (optional)
+      description: Remove all secrets and identifiers before pasting. Do not upload complete log files or databases.
+      render: text
+    validations:
+      required: false
