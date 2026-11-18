@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest a user-facing improvement or new capability.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What task is difficult or impossible today?
+      placeholder: As a user, I want to...
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe the observable behaviour, not just an implementation idea.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: How do you work around this today?
+    validations:
+      required: false
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Compatibility, privacy or security considerations
+      description: Consider battery use, background execution, local data, network exposure and device compatibility.
+    validations:
+      required: false
