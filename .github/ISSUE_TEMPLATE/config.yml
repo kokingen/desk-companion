@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security policy
+    url: https://github.com/kokingen/desk-companion/blob/main/SECURITY.md
+    about: Read the security boundaries and responsible reporting guidance before disclosing a vulnerability.
+  - name: Installation and troubleshooting
+    url: https://github.com/kokingen/desk-companion/blob/main/docs/031-DELIVERY.md
+    about: Check supported platforms, pairing steps and delivery notes.
