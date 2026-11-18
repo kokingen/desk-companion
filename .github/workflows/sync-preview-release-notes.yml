@@ -1,0 +1,36 @@
+name: Sync Preview Release Notes
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - docs/RELEASE-0.3.1.md
+      - .github/workflows/sync-preview-release-notes.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-preview-release-notes
+  cancel-in-progress: false
+
+jobs:
+  sync-release:
+    name: Publish the checked-in release notes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update the existing preview release body
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          GH_SHA: ${{ github.sha }}
+          RELEASE_TAG: v0.3.1-preview
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          release_id="$(gh api "repos/${GH_REPO}/releases/tags/${RELEASE_TAG}" --jq '.id')"
+          body="$(gh api "repos/${GH_REPO}/contents/docs/RELEASE-0.3.1.md?ref=${GH_SHA}" --jq '.content' | tr -d '\n' | base64 --decode)"
+          jq -n --arg body "$body" '{body: $body}' > "$RUNNER_TEMP/release-body.json"
+          gh api --method PATCH "repos/${GH_REPO}/releases/${release_id}" --input "$RUNNER_TEMP/release-body.json"
