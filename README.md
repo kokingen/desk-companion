@@ -1,16 +1,28 @@
-# Desk Companion
+<p align="center">
+  <img src="assets/desk-companion-mark.svg" width="112" height="112" alt="Desk Companion logo" />
+</p>
 
-**Turn an Android phone or tablet into an interactive companion for your Windows PC.**
+<h1 align="center">Desk Companion</h1>
+<p align="center"><strong>An animated Android companion for monitoring your Windows PC.</strong></p>
+<p align="center">Live CPU · RAM · Network &nbsp;|&nbsp; Bluetooth first · Private Wi-Fi fallback</p>
+<p align="center">
+  <a href="https://github.com/kokingen/desk-companion/releases/tag/v0.3.1-preview"><strong>Download Preview 0.3.1</strong></a>
+  &nbsp;·&nbsp;
+  <a href="docs/031-DELIVERY.md">Installation guide</a>
+  &nbsp;·&nbsp;
+  <a href="docs/VALIDATION.md">Test results</a>
+</p>
 
-Desk Companion pairs a Windows 11 computer with an Android device. The Android screen becomes a small animated desktop companion that shows live CPU, memory and network activity, provides touch interaction, keeps a local history, and can display verifiable Codex task status.
+<p align="center">
+  <a href="https://github.com/kokingen/desk-companion/releases"><img src="https://img.shields.io/github/v/release/kokingen/desk-companion?include_prereleases&label=preview" alt="Latest preview" /></a>
+  <img src="https://img.shields.io/badge/Windows-11%20x64-blue" alt="Windows 11 x64" />
+  <img src="https://img.shields.io/badge/Android-9%2B-3DDC84" alt="Android 9 and later" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license" /></a>
+</p>
 
-It is designed for a nearby, personal setup: **Bluetooth first, private-network Wi-Fi as a fallback**. It does not require a permanent USB connection, Root, or a cloud account for normal operation.
+Desk Companion pairs a Windows 11 PC with an Android phone or tablet. The Android device renders the companion locally, shows live performance metrics, responds to touch, keeps bounded local history, and can display verifiable Codex task status. Normal use does not require Root, a permanent USB cable, or a cloud account.
 
-[![Latest preview](https://img.shields.io/github/v/release/kokingen/desk-companion?include_prereleases&label=preview)](https://github.com/kokingen/desk-companion/releases)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows%2011%20%2B%20Android-informational)](#requirements)
-
-> **Current release: 0.3.1 Preview.** This is usable preview software, not a fully validated stable release. Performance targets and long-duration recovery tests are not all passing or complete. See [known limitations](#known-limitations) and the [validation record](docs/VALIDATION.md).
+> **Preview 0.3.1:** usable for evaluation, but not a fully validated stable release. Strict 10 Hz physical updates and consistently smooth 60 FPS have not been achieved; CPU/RAM first-display latency also misses its target. See [known limitations](#known-limitations) and the [validation record](docs/VALIDATION.md).
 
 ## Get started
 
@@ -49,14 +61,23 @@ The Windows Agent samples different metric classes at different rates:
 
 These are **Windows sampling intervals**, not a promise that every value is transmitted or physically displayed at the same rate. Each field retains its own timestamp; an old CPU or RAM sample is not relabelled as new just because a network update arrived.
 
-## How it is put together
+## How it works
 
-1. The Windows Agent collects local performance counters and selected Codex task metadata.
-2. The two devices pair and authenticate. The Agent sends compact state updates over the Bluetooth channel.
-3. If Bluetooth is unavailable and the devices can reach each other over a private network, the Android client can use the HTTPS fallback.
-4. The Android app renders the avatar and metrics locally and maintains its bounded SQLite history.
+```mermaid
+flowchart LR
+  subgraph PC["Windows 11 PC"]
+    M["CPU / RAM / network sampler"] --> A["Windows Agent"]
+    C["Codex task metadata"] --> A
+  end
+  A -- "Authenticated Bluetooth · primary" --> D["Android companion"]
+  A -- "Private-network HTTPS · fallback" --> D
+  subgraph Android["Android device"]
+    D --> UI["Local avatar + live metrics"]
+    D --> H["SQLite history"]
+  end
+```
 
-The Codex integration is **read-only status awareness**. It does not synchronize prompt or message bodies, execute commands, control the PC, or terminate tasks. CodeBuddy and WorkBuddy task-state integration is not currently implemented.
+The Codex integration is **read-only status awareness**. It reads selected local task metadata and does not synchronize prompt/message bodies, execute commands, control the PC, or terminate tasks. CodeBuddy and WorkBuddy task-state integration is not currently implemented.
 
 ## Requirements
 
