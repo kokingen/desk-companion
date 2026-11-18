@@ -78,6 +78,5 @@ body:
     attributes:
       label: Redacted diagnostic excerpt (optional)
       description: Remove all secrets and identifiers before pasting. Do not upload complete log files or databases.
-      render: text
     validations:
       required: false
