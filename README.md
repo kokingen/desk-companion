@@ -20,7 +20,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license" /></a>
 </p>
 
-Desk Companion pairs a Windows 11 PC with an Android phone or tablet. The Android device renders the companion locally, shows live performance metrics, responds to touch, keeps bounded local history, and can display verifiable Codex task status. Normal use does not require Root, a permanent USB cable, or a cloud account.
+Desk Companion pairs a Windows 11 PC with an Android phone or tablet. The Android device renders the companion locally, shows live performance metrics, responds to touch, keeps bounded local history, and can display verifiable Codex task status. Normal use does not require root access, a permanent USB cable, or a cloud account.
 
 > **Preview 0.3.1:** usable for evaluation, but not a fully validated stable release. Strict 10 Hz physical updates and consistently smooth 60 FPS have not been achieved; CPU/RAM first-display latency also misses its target. See [known limitations](#known-limitations) and the [validation record](docs/VALIDATION.md).
 
@@ -157,3 +157,4 @@ Reuse scope, upstream versions, attribution and third-party license details are 
 - [Sources and attribution](docs/SOURCES.md)
 - [Privacy](PRIVACY.md)
 - [Security policy](SECURITY.md)
+- [Contributing guide](CONTRIBUTING.md)
